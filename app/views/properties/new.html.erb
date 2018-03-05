@@ -1,0 +1,14 @@
+
+
+<%= simple_form_for @property,  do |f| %>
+
+  <%= f.input :addres, placeholder: 'Enter address' %>
+
+  <%= f.input :price, placeholder: 'Price' %>
+
+  <%= f.input :prop_url, placeholder: 'property URL' %>
+
+  <%= f.input :description, placeholder: 'Description' %>
+
+  <%= f.button :submit %>
+<% end %>
