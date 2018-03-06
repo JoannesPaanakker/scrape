@@ -444,6 +444,10 @@ textarea {
     margin: 0 auto;
 }
 
+.my-row {
+      margin: 0 auto !important;
+}
+
 .row:after {
     content: "";
     display: table;
