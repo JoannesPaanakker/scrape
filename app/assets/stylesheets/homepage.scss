@@ -1,0 +1,33 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Homepage Template
+@import "homepage/base";
+@import "homepage/form_style";
+@import "homepage/main";
+@import "homepage/vendor";
+@import "homepage/form";
+
+// Dashboard CSS
+@import "homepage/dataTables/dataTables.bootstrap";
+@import "homepage/dataTables/dataTables.responsive";
+@import "homepage/bootstrap-social";
+@import "homepage/metisMenu.min";
+@import "homepage/morris";
+@import "homepage/startmin";
+@import "homepage/timeline";
+
+// Your CSS partials
+@import "layouts/index";
+@import "components/index";
+@import "pages/index";
+
+

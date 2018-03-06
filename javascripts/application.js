@@ -1,5 +1,6 @@
 //= require rails-ujs
 //= require jquery
-//= require_tree ./application
+//= require cable
+//= require form_index
 
 

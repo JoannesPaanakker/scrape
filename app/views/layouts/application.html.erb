@@ -6,13 +6,23 @@
     <title>TODO</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <% if controller_name == "pages" && action_name == "homepage" %>
+      <%= stylesheet_link_tag 'homepage', media: 'all' %>
+    <% else %>
+      <%= stylesheet_link_tag 'application', media: 'all' %>
+    <% end %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
     <%= render 'shared/flashes' %>
     <%= yield %>
-    <%= javascript_include_tag 'application' %>
+
+    <% if controller_name == "pages" && action_name == "homepage" %>
+      <%= javascript_include_tag 'homepage' %>
+    <% else %>
+      <%= javascript_include_tag 'application' %>
+    <% end %>
+
     <%= javascript_pack_tag 'application' %>
   </body>
 </html>
