@@ -1,3 +1,4 @@
+//= require rails-ujs
 //= require jquery
 //= require modernizr
 //= require pace.min
