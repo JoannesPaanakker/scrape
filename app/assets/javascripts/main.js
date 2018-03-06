@@ -2,7 +2,6 @@
  * Glint - Main JS
  *
  * ------------------------------------------------------------------- */
-
 $('.form').find('input, textarea').on('keyup blur focus', function (e) {
 
   var $this = $(this),
@@ -122,7 +121,8 @@ $('.tab a').on('click', function (e) {
         // open-close menu by clicking on the menu icon
         menuTrigger.on('click', function(e){
             e.preventDefault();
-            // menuTrigger.toggleClass('is-clicked');
+            console.log('menu clicked')
+            menuTrigger.toggleClass('is-clicked');
             siteBody.toggleClass('menu-is-open');
         });
 
