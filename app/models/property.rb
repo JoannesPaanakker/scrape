@@ -1,4 +1,4 @@
 class Property < ApplicationRecord
   belongs_to :user
-  belongs_to :portal
+  belongs_to :portal, optional: true
 end
