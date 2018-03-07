@@ -1,0 +1,13 @@
+<h1>Hello</h1>
+
+<ul>
+      <% @portals.each do |portal| %>
+      <li>
+        <h2><%= portal.name %></h2>
+        <%= portal.country %>
+        <%= portal.portal_url %>
+        <%= portal.cost %>
+        <%= portal.premium %>
+        </li>
+      <% end %>
+</ul>
