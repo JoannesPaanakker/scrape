@@ -7,6 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 p "started seed"
+
+Property.destroy_all
+User.destroy_all
 Portal.destroy_all
 
 portal = Portal.create([
@@ -166,7 +169,7 @@ portal = Portal.create([
 
   ])
 
-User.destroy_all
+
 users = User.create([
   {email: 'bart.simpson@property.com', first_name: 'bart', last_name: 'simpson', password: '123456', comp_name: 'property', comp_url: 'http://www.walkersestates.co.uk/', phone_number: '01277 355005​', address: '90 High Street,Ingatestone, Essex, CM4 9DW'},
   {email: 'peter.griffin@property1.com', first_name: 'peter', last_name: 'griffin', password: '123456', comp_name: 'property', comp_url: 'http://www.swlp.co.uk/index.php', phone_number: '020 8767 0894', address: '195 Franciscan Road, Tooting, London, SW17 8HJ'},
@@ -174,7 +177,6 @@ users = User.create([
 
   ])
 
-Property.destroy_all
 
 properties = Property.create!([
   {
@@ -210,13 +212,5 @@ properties = Property.create!([
     user: users[1]
   }
 ])
-
-
-
-
-
-
-
-
 
 p 'seed completed'
