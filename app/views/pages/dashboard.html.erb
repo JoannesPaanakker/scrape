@@ -1,13 +1,10 @@
-<h1>Hello</h1>
+<h1>DashBoard</h1>
 
 <ul>
-      <% @portals.each do |portal| %>
-      <li>
-        <h2><%= portal.name %></h2>
-        <%= portal.country %>
-        <%= portal.portal_url %>
-        <%= portal.cost %>
-        <%= portal.premium %>
-        </li>
-      <% end %>
+  <li>
+    <%= link_to "Properties", properties_path %>
+  </li>
+  <li>
+    <%= link_to "Portals", portals_path %>
+  </li>
 </ul>

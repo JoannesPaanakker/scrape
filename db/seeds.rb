@@ -5,14 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-User.destroy_all
-Property.destroy_all
-
-users = User.create([
-  {email: '', first_name: '', last_name: '', password: '123456', comp_name: '', comp_url: '', phone_number: '', address: ''},
-  ])
-
-properties = Property.create([
-  {address: '', price:, 'price-string', description: '', prop_url: '', XML: '',}
-  ])

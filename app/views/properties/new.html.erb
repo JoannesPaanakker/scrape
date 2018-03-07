@@ -1,8 +1,8 @@
 
 
-<%= simple_form_for @property,  do |f| %>
+<%= simple_form_for @property do |f| %>
 
-  <%= f.input :addres, placeholder: 'Enter address' %>
+  <%= f.input :address, placeholder: 'Enter address' %>
 
   <%= f.input :price, placeholder: 'Price' %>
 
@@ -12,3 +12,4 @@
 
   <%= f.button :submit %>
 <% end %>
+

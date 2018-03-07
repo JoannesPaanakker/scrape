@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-<!--     <meta http-equiv="refresh" content="0;url=pages/index.html">
- -->    <title>Startmin</title>
-    <script language="javascript">
-        // window.location.href = "pages/index.html"
-    </script>
-</head>
-<body>
-<!-- <a href="pages/index.html">Go to Demo</a> -->
-</body>
-</html>
+<h1 align="center">Properties</h1>
+<ul>
+  <% @properties.each do |prop| %>
+    <li>
+      <h2><%= prop.address %></h2>
+      <%= prop.description %>
+      <%= prop.prop_url %>
+      <%= prop.XML %>
+      <%= prop.HTML %>
+    </li>
+  <% end %>
+  <%= link_to "Add Property", new_property_path %>
+</ul>
+
+<button class="btn-back text-center" id="stupid-btn">
+  <%= link_to "DashBoard", dashboard_path, class:"my-btn" %>
+</button>

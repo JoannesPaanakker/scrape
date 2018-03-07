@@ -5,15 +5,16 @@ class PropertiesController < ApplicationController
   end
 
   def create
-    @property = property.new(property_params)
+    @property = Property.new(property_params)
     @property.user = current_user
     # authorize @property
-    @property.save
+    raise
+    @property.save!
     redirect_to properties_path
   end
 
   def new
-    @property = property.new
+    @property = Property.new
     # authorize @property
   end
 
