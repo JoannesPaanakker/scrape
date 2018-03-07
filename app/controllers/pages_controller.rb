@@ -1,10 +1,11 @@
-class PagesController < ApplicationController
+  class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:homepage]
 
   def homepage
   end
 
-  def index
+  def dashboard
+    @portals = Portal.all
   end
 
    private
