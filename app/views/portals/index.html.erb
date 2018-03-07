@@ -1,0 +1,17 @@
+<h1 align="center">Portals</h1>
+<ul>
+      <% @portals.each do |portal| %>
+      <li>
+        <h2><%= portal.name %></h2>
+        <%= portal.country %>
+        <%= portal.portal_url %>
+        <%= portal.cost %>
+        <%= portal.premium %>
+        </li>
+      <% end %>
+</ul>
+
+<button class="btn-back text-center" id="stupid-btn">
+  <%= link_to "Home", root_path, class:"my-btn" %>
+</button>
+
