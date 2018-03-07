@@ -6,7 +6,11 @@
         <%= portal.country %>
         <%= portal.portal_url %>
         <%= portal.cost %>
-        <%= portal.premium %>
+        <% if portal.premium %>
+          <p class = "premium" >!!!! Premium !!!</p>
+        <% else %>
+          <p class = "free">!!!! FREE !!!!</p>
+        <% end %>
         </li>
       <% end %>
 </ul>

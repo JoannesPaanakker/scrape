@@ -1,7 +1,8 @@
 class PropertiesController < ApplicationController
 
   def index
-    @properties = Property.order(created_at: :desc)
+      @properties = Property.where(user_id: current_user)
+    # @properties = Property.order(created_at: :desc)
   end
 
   def create

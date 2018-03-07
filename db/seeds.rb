@@ -174,5 +174,49 @@ users = User.create([
 
   ])
 
+Property.destroy_all
+
+properties = Property.create!([
+  {
+    address: 'Marinaweg 87 ALMERE',
+    price: '€ 792.000 k.k.',
+    description: 'Top Ligging! ROYAAL & LUXE APPARTEMENT (circa 210m2) gelegen op de 7e etage, van Muiderburght (kop ligging met zicht op Pampus) met berging en 2 eigen parkeerplaatsen in parkeersouterrain. Een schitterend royaal appartement met een ongelofelijk uitzicht. U geniet van zonsopgang tot zonsondergang van de natuur en het weidse onbeperkte uitzicht over het IJmeer richting Pampus en Amsterdam.',
+    prop_url: 'http://www.rappange.com/Marinaweg-87-ALMERE-2017090808483725',
+    XML: '',
+    user: users[0]
+  },
+  {
+    address: 'Keizersgracht 572 AMSTERDAM',
+    price: '€ 11.792.000 k.k.',
+    description: 'Dit dubbele grachtenpand is een Rijksmonument uit circa 1770 en heeft als bestemming kantoorruimte. Het monumentale pand bevat nog diverse originele onderdelen waaronder stijlkamers en houtsierwerk. ',
+    prop_url: 'http://www.rappange.com/Keizersgracht-572-AMSTERDAM-2018010816271525',
+    XML: '',
+    user: users[0]
+  },
+  {
+    address: 'Sinjeur Semeynsstraat 764 - AMSTERDAM',
+    price: '€ 225.000 k.k.',
+    description: 'Ruim 4-kamer appartement van ca. 79 m² op de vierde woonlaag van een kleinschalig appartementen complex.',
+    prop_url: 'https://www.vanderlinden.nl/koopwoning/Sinjeur+Semeynsstraat+76+-+AMSTERDAM/6e18e454-18b4-415c-a7c7-e929140a3b34',
+    XML: '',
+    user: users[1]
+  },
+  {
+    address: 'Bos en Lommerplantsoen 73H - AMSTERDAM',
+    price: '€ 225.000 k.k.',
+    description: 'Ruim en keurig afgewerkt twee kamerappartement op zeer centrale locatie in het hippe Bos en Lommer! ',
+    prop_url: 'https://www.vanderlinden.nl/koopwoning/Bos+en+Lommerplantsoen+73+-+AMSTERDAM/51db0193-b209-4a54-920e-01bec95e3b2e',
+    XML: '',
+    user: users[1]
+  }
+])
+
+
+
+
+
+
+
+
 
 p 'seed completed'
