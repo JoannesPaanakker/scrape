@@ -2,7 +2,7 @@
 //= require jquery
 //= require cable
 //= require bootstrap.min
-//= require dashboard/startmin
-//= require form_index
-//= require plugins
+//= require homepage/dashboard/startmin
+//= require homepage/form_index
+//= require homepage/plugins
 //= require_tree ./application
