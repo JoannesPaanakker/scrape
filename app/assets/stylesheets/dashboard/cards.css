@@ -1,0 +1,56 @@
+.dashboard-nametag {
+  font-size: 20px;
+}
+
+.navbar .divider-vertical {
+  height: 50px;
+  margin: 0 9px;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #f2f2f2;
+}
+
+.all-cards {
+  margin-top: 50px;
+  margin-left: 289px;
+}
+
+.card-block {
+  height: 120px;
+  font-size: 30px
+}
+
+.card-background-listing {
+  background-color: #F0AD4E;
+}
+
+.card-background-leads {
+  background-color: #D9534F;
+}
+
+.card-background-portal {
+  background-color: #5CB85C;
+}
+
+.card-background-upgrade {
+  background-color: #3366cc;
+}
+
+#sidebar-header {
+  margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  .col-lg-3 {
+    width: 22%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
