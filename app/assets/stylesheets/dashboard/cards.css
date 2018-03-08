@@ -24,7 +24,7 @@
   font-size: 25px;
 }
 
-.card {
+/*.card {
   margin-left: 20px;
   background-color: white;
   color: #5b5a5a;
@@ -33,6 +33,7 @@
   height: 345px;
   text-align: center;
 }
+
 
 .cards-row {
   margin-left: 50px;
