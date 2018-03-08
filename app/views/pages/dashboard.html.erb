@@ -1,6 +1,6 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="navbar-header">
-    <a class="navbar-brand" href="index.html">Scriblix</a>
+    <a class="navbar-name"> <%= link_to "Scriblix", root_path %> </a>
   </div>
 
   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -11,93 +11,95 @@
   </button>
 
   <ul class="nav navbar-nav navbar-left navbar-top-links">
-    <li><a href="homes"><i class="fa fa-home fa-fw"></i> Website</a></li>
-    <button class="btn btn-primary">
-      <%= link_to destroy_user_session_path, method: :delete do %>
-      <%= t(".sign_out", default: "Log out") %>
-      <% end %>
-    </button>
-    <li>
-      <button class="btn btn-primary card-buttons"><%= link_to "User Details", edit_user_registration_path %>
-      </button></li>
-    </ul>
-  </nav>
+  </ul>
+</nav>
 
 
-  <!--- SIDE BAR -->
-  <div class="body-content">
-    <div id="sidebar">
-      <!-- Sidebar Header -->
-      <div class="sidebar-header">
-      </div>
-      <!-- Sidebar Links -->
-      <ul class="list-unstyled text-sidebar">
-        <li><h3 class="side-title">Dashboard</h3></li>
-        <li class="active sidebar-item"><a href="#">Home</a></li>
-        <li class="sidebar-item"><a href="#">Listings</a></li>
-        <li><!-- Link with dropdown items -->
-          <ul class="collapse list-unstyled" id="homeSubmenu">
-          </ul>
-          <li class="sidebar-item"><a href="#">Upgrade</a></li>
-          <li class="sidebar-item"><a href="#">Portal List</a></li>
-          <li class="sidebar-item"><a href="#">Request feeds</a></li>
+<!--- SIDE BAR -->
+<div class="body-content">
+  <div id="sidebar">
+    <!-- Sidebar Header -->
+    <div class="sidebar-header">
+    </div>
+    <!-- Sidebar Links -->
+    <ul class="list-unstyled text-sidebar">
+      <li class="active sidebar-item"><a href="#">Home</a></li>
+      <li class="sidebar-item"><a href="#">Listings</a></li>
+      <li><!-- Link with dropdown items -->
+        <ul class="collapse list-unstyled" id="homeSubmenu">
         </ul>
-      </li>
+        <li class="sidebar-item"><a href="#">Upgrade</a></li>
+        <li class="sidebar-item"><a href="#">Portal List</a></li>
+        <li class="sidebar-item"><a href="#">Request feeds</a></li>
+        <li>
+          <button class="btn btn-primary sidebar-button-">
+            <%= link_to destroy_user_session_path, method: :delete do %>
+            <%= t(".sign_out", default: "Log out") %>
+            <% end %>
+          </button>
+        </li>
+        <li>
+          <button class="btn btn-primary sidebar-button-UD"><%= link_to "User Details", edit_user_registration_path %>
+          </button>
+        </li>
+      </button>
     </ul>
-  </div>
+  </li>
+</ul>
+</div>
 
 
 
-  <div class="all-cards-row">
+<div class="all-cards-row">
 
-    <!----------- START OF THE SMALL TOP CARD SECTION ---->
+  <!----------- START OF THE SMALL TOP CARD SECTION ---->
 
-    <div class="row cards-row">
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-block">
-            <h3 class="card-title">Listings</h3>
-            <p class="card-text">See a complete list of all the listed properties placed.
-            </p>
-            <button class="btn btn-primary card-buttons"><%= link_to "See Details", properties_path%></button>
-          </div>
+  <div class="row cards-row">
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">Listings</h3>
+          <p class="card-text">See a complete list of all the listed properties placed.
+          </p>
+          <button class="btn btn-primary card-buttons"><%= link_to "See Details", properties_path%></button>
         </div>
       </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-block">
-            <h3 class="card-title">Upgrade</h3>
-            <p class="card-text">Upgrade your package to add more listings and acces more portals for more reach.</p>
-            <button class="btn btn-primary card-buttons"><%= link_to "See Details", prices_path%></button>
-          </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">Upgrade</h3>
+          <p class="card-text">Upgrade your package to add more listings and acces more portals for more reach.</p>
+          <button class="btn btn-primary card-buttons"><%= link_to "See Details", prices_path%></button>
         </div>
       </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-block">
-            <h3 class="card-title">Portal List</h3>
-            <p class="card-text">See all the portals that we support</p>
-            <button class="btn btn-primary card-buttons"><%= link_to "See Details", portals_path %>
-            </button>
-          </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">Portal List</h3>
+          <p class="card-text">See all the portals that we support</p>
+          <button class="btn btn-primary card-buttons"><%= link_to "See Details", portals_path %>
+          </button>
         </div>
       </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-block">
-            <h3 class="card-title">Request a feed</h3>
-            <p class="card-text">Request a new feed to upload new listings</p>
-            <button class="btn btn-primary card-buttons"><%= link_to "See Details", prices_path%></button>
-          </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">Request a feed</h3>
+          <p class="card-text">Request a new feed to upload new listings</p>
+          <button class="btn btn-primary card-buttons"><%= link_to "See Details", prices_path%></button>
         </div>
       </div>
     </div>
   </div>
 </div>
+</div>
 
-<div class="row">
+<div class="row big-card-row">
   <div class="col-md-6 col-md-offset-4">
-    <div class="card card-inverse">
+    <div class="card big-card">
       <img class="card-img" src="..." alt="Card image">
       <div class="card-img-overlay">
         <h4 class="card-title">Card title</h4>
