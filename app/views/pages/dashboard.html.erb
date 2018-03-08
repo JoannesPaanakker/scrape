@@ -52,44 +52,42 @@
 
     <!----------- START OF THE SMALL TOP CARD SECTION ---->
 
-    <div class="row cards-row">
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-block">
-            <h3 class="card-title">Listings</h3>
-            <p class="card-text">See a complete list of all the listed properties placed.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+  <div class="row cards-row">
+    <div class="col-sm-3">
+      <div class="card-dashboard">
+        <div class="card-block">
+          <h3 class="card-title">Listings</h3>
+          <p class="card-text">See a complete list of all the listed properties placed.
+          </p>
+          <button class="btn btn-primary card-buttons"><%= link_to "See Details", properties_path%></button>
         </div>
       </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-block">
-            <h3 class="card-title">Upgrade</h3>
-            <p class="card-text">Upgrade your package to add more listings and acces more portals for more reach.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card-dashboard">
+        <div class="card-block">
+          <h3 class="card-title">Upgrade</h3>
+          <p class="card-text">Upgrade your package to add more listings and acces more portals for more reach.</p>
+          <button class="btn btn-primary card-buttons"><%= link_to "See Details", prices_path%></button>
         </div>
       </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-block">
-            <h3 class="card-title">Portal List</h3>
-            <p class="card-text">See all the portals that we support</p>
-            <button class="btn btn-primary card-buttons"><%= link_to "Portals", portals_path %>
-            </button>
-          </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card-dashboard">
+        <div class="card-block">
+          <h3 class="card-title">Portal List</h3>
+          <p class="card-text">See all the portals that we support</p>
+          <button class="btn btn-primary card-buttons"><%= link_to "See Details", portals_path %>
+          </button>
         </div>
       </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-block">
-            <h3 class="card-title">Request a feed</h3>
-            <p class="card-text">Request a new feed to upload new listings</p>
-            <button class="btn btn-primary card-buttons"><%= link_to "See Details", properties_path%>
-            </button>
-          </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card-dashboard">
+        <div class="card-block">
+          <h3 class="card-title">Request a feed</h3>
+          <p class="card-text">Request a new feed to upload new listings</p>
+          <button class="btn btn-primary card-buttons"><%= link_to "See Details", prices_path%></button>
         </div>
       </div>
     </div>
@@ -98,7 +96,7 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-4">
-    <div class="card card-inverse">
+    <div class="card-dashboard big-card">
       <img class="card-img" src="..." alt="Card image">
       <div class="card-img-overlay">
         <h4 class="card-title">Card title</h4>
