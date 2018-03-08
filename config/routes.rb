@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+
   get 'dashboard', to: 'pages#dashboard', as: :dashboard
   get 'prices', to: 'pages#prices', as: :prices
 
-  devise_for :users
+  devise_for :users, controllers: {
+  registrations: "registrations",
+}
   # root to: 'pages#home'
   root to: 'pages#homepage'
   resources :pages, only: [:index]
@@ -12,4 +15,5 @@ Rails.application.routes.draw do
     resources :transactions, only: [:show, :new, :create]
   end
   resources :portals, only: [:show, :index]
+  resources :users, only: [:show]
 end
