@@ -1,0 +1,27 @@
+ button {
+    background: #febd0e;
+    color: #fff;
+}
+
+.row {
+  padding: 100px;
+}
+
+
+h1{
+  font-size: 35px; }
+
+.main {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #c3c3c3;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main div {
+    width: 150px;
+    height: 150px;
+}

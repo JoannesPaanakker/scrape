@@ -18,7 +18,7 @@ portal = Portal.create([
   {name: 'emlaktown', country: 'Turkey', portal_url: 'https://www.emlaktown.com/', premium: true, cost: 120},
   {name: 'mesto', country: 'Russia', portal_url: 'https://mesto.ua/', premium: true, cost: 160},
   {name: 'willhaben', country: 'Germany', portal_url: 'https://www.willhaben.at/iad', premium: true, cost: 160},
-  {name: 'arkadia', country: 'Global Portal', portal_url: 'http://en.arkadia.com/', premium: true, cost: 180},
+  {name: 'arkadia', country: 'Global portal', portal_url: 'http://en.arkadia.com/', premium: true, cost: 180},
   {name: 'morizon', country: 'Poland', portal_url: 'https://www.morizon.pl/', premium: true, cost: 150},
   {name: 'le figero', country: 'France', portal_url: 'https://properties.lefigaro.com/', premium: true, cost: 150},
   {name: 'city24', country: 'Latvia', portal_url: 'https://city24.postimees.ee/', premium: true, cost: 150},
