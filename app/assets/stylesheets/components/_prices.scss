@@ -9,19 +9,29 @@
 
 
 h1{
-  font-size: 35px; }
-
-.main {
-    width: 200px;
-    height: 200px;
-    border: 1px solid #c3c3c3;
-    display: -webkit-flex; /* Safari */
-    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
-    display: flex;
-    flex-wrap: wrap;
+  font-size: 35px;
+  padding: 50px;
+  text-align: center;
 }
 
-.main div {
-    width: 150px;
-    height: 150px;
+
+
+
+.wrapper {
+    background-color: #D3D3D3; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+
+.group {
+  margin-left: 539px;
 }
