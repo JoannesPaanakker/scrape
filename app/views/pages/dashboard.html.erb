@@ -13,9 +13,9 @@
   <ul class="nav navbar-nav navbar-left navbar-top-links">
     <li><a href="homes"><i class="fa fa-home fa-fw"></i> Website</a></li>
     <button class="btn btn-primary">
-    <%= link_to destroy_user_session_path, method: :delete do %>
-    <%= t(".sign_out", default: "Log out") %>
-    <% end %>
+      <%= link_to destroy_user_session_path, method: :delete do %>
+      <%= t(".sign_out", default: "Log out") %>
+      <% end %>
     </button>
     <li>
       <button class="btn btn-primary card-buttons"><%= link_to "User Details", edit_user_registration_path %>
@@ -59,7 +59,7 @@
             <h3 class="card-title">Listings</h3>
             <p class="card-text">See a complete list of all the listed properties placed.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button class="btn btn-primary card-buttons"><%= link_to "See Details", properties_path%></button>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@
           <div class="card-block">
             <h3 class="card-title">Upgrade</h3>
             <p class="card-text">Upgrade your package to add more listings and acces more portals for more reach.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button class="btn btn-primary card-buttons"><%= link_to "See Details", prices_path%></button>
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@
           <div class="card-block">
             <h3 class="card-title">Portal List</h3>
             <p class="card-text">See all the portals that we support</p>
-            <button class="btn btn-primary card-buttons"><%= link_to "Portals", portals_path %>
+            <button class="btn btn-primary card-buttons"><%= link_to "See Details", portals_path %>
             </button>
           </div>
         </div>
@@ -87,8 +87,7 @@
           <div class="card-block">
             <h3 class="card-title">Request a feed</h3>
             <p class="card-text">Request a new feed to upload new listings</p>
-            <button class="btn btn-primary card-buttons"><%= link_to "See Details", properties_path%>
-            </button>
+            <button class="btn btn-primary card-buttons"><%= link_to "See Details", prices_path%></button>
           </div>
         </div>
       </div>
