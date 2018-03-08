@@ -8,6 +8,10 @@
     @portals = Portal.all
   end
 
+  def prices
+
+  end
+
    private
 
   def resource_name
