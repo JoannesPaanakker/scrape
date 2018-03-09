@@ -1,32 +1,52 @@
-<h1 align="center">Packages</h1>
-<div class="container">
-  <div class="row">
-    <% @packages.each do |pack| %>
-      <div class="col-xs-12 col-sm-4">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="navbar-header">
+    <a class="navbar-name"> <%= link_to "Scriblix", dashboard_path, class:"logo-topbar" %> </a>
+  </div>
 
-        <% image = image_path 'logo.jpg' %>
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image %>')">
-          <div class="card-description">
-            <h2><%= pack.name %></h2>
-          </div>
-          <p><%= humanized_money_with_symbol(pack.price) %> per Month</p>
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
 
-
-        <!-- <div class="card-link text-center"> -->
-          <%= link_to package_path(pack) do %>
-            <h4>Details and Buy</h4>
-          <% end  %>
-<!--         </div> -->
+  <ul class="nav navbar-nav navbar-left navbar-top-links">
+  </ul>
+</nav>
 
 
+<!--- SIDE BAR -->
+<div class="body-content">
+  <div id="sidebar">
+    <!-- Sidebar Header -->
+    <div class="sidebar-header">
+    </div>
+    <!-- Sidebar Links -->
+    <ul class="list-unstyled text-sidebar">
+      <li class="active sidebar-item"><%= link_to "Home", dashboard_path%></li>
 
-<!--           <button class="btn btn-primary card-buttons">
-            <%#= link_to "details", package_path(pack) %>
-          </button> -->
+      <li><!-- Link with dropdown items -->
+        <ul class="collapse list-unstyled" id="homeSubmenu">
+        </ul>
+        <li class="sidebar-item"><%= link_to "Listings", properties_path %></li>
+        <li class="sidebar-item"><%= link_to "Upgrade", packages_path %></li>
+        <li class="sidebar-item"><%= link_to "Portal List", portals_path %></li>
+        <li class="sidebar-item"><%= link_to "Request feeds", prices_path%></li>
+        <li class="sidebar-item"><a><%= link_to "User details", edit_user_registration_path %></a>
+        <li class="sidebar-item"><a> <%= link_to destroy_user_session_path, method: :delete do %>
+          <%= t(".sign_out", default: "Log out") %>
+          <% end %></a></li>
 
-
-        </div>
-      </div>
-    <% end %>
+          </li>
+        </li>
+      </ul>
+    </li>
   </div>
 </div>
+
+
+
+<div class="all-cards-row">
+          <%= render 'partials/packages' %>
+</div>
+

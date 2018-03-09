@@ -4,7 +4,7 @@
     <% @properties.each do |prop| %>
       <div class="col-xs-6">
         <div class="card mb-3">
-          <%= image_tag 'house2', style: "width: 100%" %>
+          <%= image_tag 'house2.jpg', style: "width: 100%" %>
           <div class="card-body">
             <h5 class="card-title"><%= prop.address %></h5>
             <p class="card-text"></p>
@@ -18,7 +18,7 @@
 
 <div class="container">
   <button class="btn-back text-center" id="stupid-btn">
-    <%= link_to "Add Property", new_property_path, class:"my-btn" %>
+    <%= link_to "Add Property", dashboard_path, class:"my-btn" %>
   </button>
 </div>
 
