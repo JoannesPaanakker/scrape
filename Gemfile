@@ -22,6 +22,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'font-awesome-rails'
 gem 'coffee-rails', '~> 4.2'
+gem 'money-rails'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

@@ -1,0 +1,16 @@
+<h1 align="center">Packages</h1>
+<ul>
+  <% @packages.each do |pack| %>
+    <li>
+      <h2><%= pack.name %></h2>
+      <h2><%= pack.description %></h2>
+      <h2><%= humanized_money_with_symbol(pack.price) %> per Month</h2>
+    </li>
+  <% end %>
+</ul>
+
+
+<button class="btn btn-primary card-buttons">
+  <%= link_to "DashBoard", dashboard_path %>
+</button>
+
