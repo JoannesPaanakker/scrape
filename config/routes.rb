@@ -14,11 +14,17 @@ Rails.application.routes.draw do
     resources :portals, only: [:show, :index]
   end
 
-  resources :transactions, only: [:show, :new, :create, :index]
+  # resources :transactions, only: [:show, :new, :create, :index]
 
   resources :portals, only: [:show, :index]
+
   resources :users, only: [:show] do
     resources :packages, only: [:show]
   end
+
   resources :packages, only: [:show, :index]
+
+  resources :orders, only: [:show, :create] do
+    resources :payments, only: [:new, :create]
+  end
 end

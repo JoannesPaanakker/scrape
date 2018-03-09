@@ -1,0 +1,9 @@
+<%= form_tag orders_path do %>
+  <%= hidden_field_tag 'package_id', @package.id %>
+  <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
+<% end %>
+<br>
+<br>
+<h2><%= @package.name  %></h2>
+
+<h2><%= @package.description %></h2>
