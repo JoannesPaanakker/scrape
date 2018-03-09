@@ -1,17 +1,88 @@
-<h1 align="center">Properties</h1>
-<ul>
-  <% @properties.each do |prop| %>
-    <li>
-      <h2><%= prop.address %></h2>
-      <%= prop.description %>
-      <%= prop.prop_url %>
-      <%= prop.XML %>
-      <%= prop.HTML %>
-    </li>
-  <% end %>
-  <%= link_to "Add Property", new_property_path %>
-</ul>
 
-<button class="btn-back text-center" id="stupid-btn">
-  <%= link_to "DashBoard", dashboard_path, class:"my-btn" %>
-</button>
+
+
+
+
+
+
+
+<!-- property details -->
+
+<!--
+<% @properties.each do |prop| %>
+<div class="container">
+  <div class="cards" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2))">
+    <div class="property-description">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-2">
+            <%= image_tag "" %>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="col-xs-12 col-sm-2">
+            <h2><%= prop.address %></h2>
+            <%= prop.description %>
+            <%= prop.XML %>
+            <%= prop.HTML %>
+
+          </div>
+        </div>
+
+
+
+
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+-->
+
+
+
+
+
+<% @properties.each do |prop| %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="card mb-3">
+        <%= image_tag 'house1', style: "width: 100%" %>
+        <div class="card-body">
+          <h5 class="card-title"><%= prop.address %></h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="card mb-3">
+        <%= image_tag 'house1', style: "width: 100%" %>
+        <div class="card-body">
+          <h5 class="card-title"><%= prop.address %></h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <% end %>
+</div>
+
+
+
+
+
+<div class="container">
+  <button class="btn-back text-center" id="stupid-btn">
+    <%= link_to "DashBoard", dashboard_path, class:"my-btn" %>
+  </button>
+</div>
+
+<div class="container">
+  <button class="btn-back text-center" id="stupid-btn">
+    <%= link_to "Add Property", new_property_path, class:"my-btn" %>
+  </button>
+</div>
