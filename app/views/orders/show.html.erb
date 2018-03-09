@@ -1,0 +1,9 @@
+<!-- app/views/orders/show.html.erb -->
+<h1>Order Confirmed</h1>
+<ul>
+  <li>Status: <%= @order.state %></li>
+  <li>Item: <%= @order.package_sku %></li>
+  <li>Amount: <%= humanized_money_with_symbol(@order.amount) %></li>
+<ul>
+
+<button class="btn btn-primary card-buttons"><%= link_to "Back to Dashboard", dashboard_path%></button>
