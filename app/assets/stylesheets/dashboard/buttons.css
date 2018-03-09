@@ -14,3 +14,21 @@ button {
   bottom: 20px;
   margin-left: 8px;
 }
+
+.card-buttons {
+  margin-top: 10px;
+  display: table-cell;
+  vertical-align: bottom;
+  bottom: 20px;
+  position: absolute;
+  background-color: #07b733;
+  border-color: #06d339;
+  transition-duration: 1s;
+  border-radius: 25px;
+}
+
+.card-buttons:hover {
+  background-color: #06d339;
+  border-color: #06d339;
+  transition-duration: 1s;
+}

@@ -38,3 +38,7 @@
   margin-left: 17px;
 
 }
+
+.navbar-inverse {
+  border-bottom: 3px solid #21ca21;
+}
