@@ -7,10 +7,54 @@ button {
   position: absolute;
   bottom: 70px;
   margin-left: 8px;
+  border-radius: 25px;
+  background-color: #8a8989e6;
+  border-color: #473d3d;
+  transition-duration: 1s;
 }
 
 .sidebar-button-DESTR {
   position: absolute;
   bottom: 20px;
   margin-left: 8px;
+  border-radius: 25px;
+  background-color: #8a8989e6;
+  border-color: #473d3d;
+  transition-duration: 1s;
 }
+
+.card-buttons {
+  margin-top: 10px;
+  display: table-cell;
+  vertical-align: bottom;
+  bottom: 20px;
+  position: absolute;
+  border-radius: 25px;
+  background-color: #57a70bb8;
+  border-color: #57a70bb8;
+  transition-duration: 1s;
+}
+
+.card-buttons:hover {
+  background-color: #209119c7;
+  border-color: #57a70bb8;
+  transition-duration: 1s;
+}
+
+.sidebar-button-DESTR:hover {
+  background-color: #918b8ba8;
+  border-color: #57a70bb8;
+  transition-duration: 1s;
+}
+
+.sidebar-button-UD:hover {
+  background-color: #918b8ba8;
+  border-color: #473d3d;
+  transition-duration: 1s;
+}
+
+
+
+
+
+
