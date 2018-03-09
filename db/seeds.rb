@@ -8,11 +8,40 @@
 
 p "started seed"
 
+# Transaction.destroy_all
 Property.destroy_all
 User.destroy_all
 Portal.destroy_all
+Package.destroy_all
 
-portal = Portal.create([
+packages = Package.create([
+  {
+    name: "Classic",
+    description: "Classic package 20 properties and
+access to 30 million potential buyers",
+    price_cents: 4600
+  },
+  {
+    name: "Premium",
+    description: "Premium package 50 properties and
+access to 70 million potential buyers",
+    price_cents: 9000
+  },
+  {
+    name: "Go Pro",
+    description: "Go pro package 100 properties and
+access to 110 million potential buyers",
+    price_cents: 12500
+  },
+  {
+  name: "Platinum",
+  description: "Platinum package 200 properties and
+access to 140 million potential buyers",
+  price_cents: 20000
+},
+])
+
+portals = Portal.create([
   {name: 'funda', country: 'Netherlands', portal_url: 'https://www.funda.nl/', premium: true, cost: 200},
   {name: 'kyero', country: 'Spain', portal_url: 'https://www.kyero.com/', premium: true, cost: 170},
   {name: 'emlaktown', country: 'Turkey', portal_url: 'https://www.emlaktown.com/', premium: true, cost: 120},
@@ -212,5 +241,25 @@ properties = Property.create!([
     user: users[1]
   }
 ])
+
+
+
+# transactions = Transaction.create([
+#   {
+#     user: users[1],
+#     portal: portals[2],
+#     price_cents: 5000
+#   },
+#   {
+#     user: users[1],
+#     portal: portals[2],
+#     price_cents: 6000
+#   },
+#   {
+#     user: users[2],
+#     portal: portals[3],
+#     price_cents: 4500
+#   },
+# ])
 
 p 'seed completed'

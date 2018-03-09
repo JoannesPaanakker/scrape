@@ -12,8 +12,13 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :properties do
     resources :portals, only: [:show, :index]
-    resources :transactions, only: [:show, :new, :create]
   end
+
+  resources :transactions, only: [:show, :new, :create, :index]
+
   resources :portals, only: [:show, :index]
-  resources :users, only: [:show]
+  resources :users, only: [:show] do
+    resources :packages, only: [:show]
+  end
+  resources :packages, only: [:show, :index]
 end
