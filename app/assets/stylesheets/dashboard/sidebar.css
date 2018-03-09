@@ -22,7 +22,7 @@
 }
 
 .list-unstyled {
-  padding-top: 50px;
+  padding-top: 75px;
 }
 
 .sidebar-item {
@@ -32,11 +32,10 @@
 
 }
 
-.navbar-name {
-  font-size: 27px;
-  margin-top: 10px;
-  margin-left: 17px;
-
+.topleft-logo {
+  font-size: 30px;
+  margin-left: 20px;
+  color: #4caf50;
 }
 
 .navbar-inverse {

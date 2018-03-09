@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180305121743) do
+ActiveRecord::Schema.define(version: 20180309110053) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "packages", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "photo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "price_cents", default: 0, null: false
+  end
 
   create_table "portals", force: :cascade do |t|
     t.string "name"
@@ -46,6 +55,7 @@ ActiveRecord::Schema.define(version: 20180305121743) do
     t.bigint "portal_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "price_cents", default: 0, null: false
     t.index ["portal_id"], name: "index_transactions_on_portal_id"
     t.index ["user_id"], name: "index_transactions_on_user_id"
   end
@@ -69,7 +79,10 @@ ActiveRecord::Schema.define(version: 20180305121743) do
     t.string "comp_url"
     t.string "phone_number"
     t.string "address"
+    t.string "user"
+    t.bigint "package_id"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["package_id"], name: "index_users_on_package_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
@@ -77,4 +90,5 @@ ActiveRecord::Schema.define(version: 20180305121743) do
   add_foreign_key "properties", "users"
   add_foreign_key "transactions", "portals"
   add_foreign_key "transactions", "users"
+  add_foreign_key "users", "packages"
 end

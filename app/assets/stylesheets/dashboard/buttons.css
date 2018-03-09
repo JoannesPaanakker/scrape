@@ -7,12 +7,20 @@ button {
   position: absolute;
   bottom: 70px;
   margin-left: 8px;
+  border-radius: 25px;
+  background-color: #8a8989e6;
+  border-color: #473d3d;
+  transition-duration: 1s;
 }
 
 .sidebar-button-DESTR {
   position: absolute;
   bottom: 20px;
   margin-left: 8px;
+  border-radius: 25px;
+  background-color: #8a8989e6;
+  border-color: #473d3d;
+  transition-duration: 1s;
 }
 
 .card-buttons {
@@ -21,6 +29,7 @@ button {
   vertical-align: bottom;
   bottom: 20px;
   position: absolute;
+
   background-color: #07b733;
   border-color: #06d339;
   transition-duration: 1s;
