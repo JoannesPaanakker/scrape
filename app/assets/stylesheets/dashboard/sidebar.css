@@ -38,4 +38,6 @@
   color: #4caf50;
 }
 
-
+.navbar-inverse {
+  border-bottom: 3px solid #21ca21;
+}

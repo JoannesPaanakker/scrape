@@ -29,32 +29,15 @@ button {
   vertical-align: bottom;
   bottom: 20px;
   position: absolute;
-  border-radius: 25px;
-  background-color: #57a70bb8;
-  border-color: #57a70bb8;
+
+  background-color: #07b733;
+  border-color: #06d339;
   transition-duration: 1s;
+  border-radius: 25px;
 }
 
 .card-buttons:hover {
-  background-color: #209119c7;
-  border-color: #57a70bb8;
+  background-color: #06d339;
+  border-color: #06d339;
   transition-duration: 1s;
 }
-
-.sidebar-button-DESTR:hover {
-  background-color: #918b8ba8;
-  border-color: #57a70bb8;
-  transition-duration: 1s;
-}
-
-.sidebar-button-UD:hover {
-  background-color: #918b8ba8;
-  border-color: #473d3d;
-  transition-duration: 1s;
-}
-
-
-
-
-
-
