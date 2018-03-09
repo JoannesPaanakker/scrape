@@ -46,14 +46,6 @@
   margin-left: 150px;
 }
 
-.card-buttons {
-  margin-top: 10px;
-  display: table-cell;
-  vertical-align: bottom;
-  bottom: 20px;
-  position: absolute;
-}
-
 .row {
   padding: none;
 }
