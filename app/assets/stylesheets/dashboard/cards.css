@@ -11,6 +11,8 @@
 .card-body {
   background-color: white;
   color: black;
+  border-radius: 5px;
+  border-radius: 2px blue;
 
 }
 @media (min-width: 768px) {
@@ -22,30 +24,43 @@
   font-size: 25px;
 }
 
-.card {
+.card-dashboard {
   margin-left: 20px;
-  margin-top: 70px;
   background-color: white;
   color: #5b5a5a;
   text-shadow: none;
   padding: 45px;
-  height: 305px;
+  height: 345px;
+  text-align: center;
 }
 
 .cards-row {
   margin-left: 50px;
   margin-right: 80px;
+  margin-top: 85px;
+  padding: 1px !important;
 }
 
 .all-cards-row {
   width: 1250px;
-}
-
-.card-buttons {
-  margin-top: 10px;
+  margin-left: 150px;
 }
 
 
+.row {
+  padding: none;
+}
+
+.big-card {
+  width: 1068px;
+  margin-left: -285px;
+
+}
+
+.big-card-row {
+  padding-top: 10px !important;
+  padding-left: 10px
+}
 
 
 
