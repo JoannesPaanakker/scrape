@@ -1665,6 +1665,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-menu-toggle.opaque .header-menu-text {
     background-color: #000000;
+    color: white;
 }
 
 .header-menu-toggle:hover, .header-menu-toggle:focus {
@@ -1678,6 +1679,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     left: -70px;
     width: 70px;
     padding-left: 12px;
+    color: white;
 }
 
 .header-menu-icon {
@@ -1818,9 +1820,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__buttons {
-    padding-top: 6rem;
     text-align: left;
-    margin-left: 156px;
+    margin-left: 50px;
+    margin-top: 180px;
+
 }
 
 .home-content__buttons .btn {
@@ -3622,7 +3625,9 @@ footer .row {
     }
 }
 
-
+video {
+  width: 100%;
+}
 
 
 /*# sourceMappingURL=main.css.map */
