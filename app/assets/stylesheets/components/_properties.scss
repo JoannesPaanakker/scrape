@@ -1,0 +1,64 @@
+.properties-card {
+  border-radius: 25px;
+}
+
+.spec-object {
+  position: relative;
+  cursor: pointer;
+}
+
+.spec-object-item {
+  min-height: 500px;
+  background-color: #f6f6f6;
+  box-shadow: 0 0 10px -5px rgba(143,143,143,1);
+}
+
+.col-sm-4 {
+  width: 33.33333333%;
+}
+
+
+.spec_price {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #33BE2D;
+  font-weight: 600;
+}
+
+.spec_address {
+  h3 {
+    font-size: 22px;
+  }
+}
+
+.spec_description {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  h4 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+
+  height: 150px;
+  overflow: scroll;
+  min-height: 150px;
+}
+
+
+.spec_place {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  color: #2e2e2e;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+#myButton {
+margin-left: -103px;
+}

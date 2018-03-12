@@ -212,6 +212,7 @@ properties = Property.create!([
     address: 'Marinaweg 87 ALMERE',
     price: '€ 792.000 k.k.',
     description: 'Top Ligging! ROYAAL & LUXE APPARTEMENT (circa 210m2) gelegen op de 7e etage, van Muiderburght (kop ligging met zicht op Pampus) met berging en 2 eigen parkeerplaatsen in parkeersouterrain. Een schitterend royaal appartement met een ongelofelijk uitzicht. U geniet van zonsopgang tot zonsondergang van de natuur en het weidse onbeperkte uitzicht over het IJmeer richting Pampus en Amsterdam.',
+    photo: '//bb2.goesenroos.nl/bgmRappange/WONEN/2017090808483725/Marinaweg%2087%20Almere%20(6).JPG',
     prop_url: 'http://www.rappange.com/Marinaweg-87-ALMERE-2017090808483725',
     XML: '',
     user: users[0]
@@ -220,6 +221,7 @@ properties = Property.create!([
     address: 'Keizersgracht 572 AMSTERDAM',
     price: '€ 11.792.000 k.k.',
     description: 'Dit dubbele grachtenpand is een Rijksmonument uit circa 1770 en heeft als bestemming kantoorruimte. Het monumentale pand bevat nog diverse originele onderdelen waaronder stijlkamers en houtsierwerk. ',
+    photo: '//bb2.goesenroos.nl/bgmRappange/WONEN/2018010816271525/Keizersgracht%20572-0262.jpg',
     prop_url: 'http://www.rappange.com/Keizersgracht-572-AMSTERDAM-2018010816271525',
     XML: '',
     user: users[0]
@@ -228,6 +230,7 @@ properties = Property.create!([
     address: 'Sinjeur Semeynsstraat 764 - AMSTERDAM',
     price: '€ 225.000 k.k.',
     description: 'Ruim 4-kamer appartement van ca. 79 m² op de vierde woonlaag van een kleinschalig appartementen complex.',
+    photo: 'https://tiaramedia.nvm.nl/Opvragen.media?MediaID=106493299',
     prop_url: 'https://www.vanderlinden.nl/koopwoning/Sinjeur+Semeynsstraat+76+-+AMSTERDAM/6e18e454-18b4-415c-a7c7-e929140a3b34',
     XML: '',
     user: users[1]
@@ -235,8 +238,64 @@ properties = Property.create!([
   {
     address: 'Bos en Lommerplantsoen 73H - AMSTERDAM',
     price: '€ 225.000 k.k.',
-    description: 'Ruim en keurig afgewerkt twee kamerappartement op zeer centrale locatie in het hippe Bos en Lommer! ',
+    description: 'Ruim en keurig afgewerkt twee kamerappartement op zeer centrale locatie in het hippe Bos en Lommer!',
+    photo: 'https://tiaramedia.nvm.nl/Opvragen.media?MediaID=107410624',
     prop_url: 'https://www.vanderlinden.nl/koopwoning/Bos+en+Lommerplantsoen+73+-+AMSTERDAM/51db0193-b209-4a54-920e-01bec95e3b2e',
+    XML: '',
+    user: users[1]
+  },
+
+  {
+    address: 'Hekelveld 3 - II AMSTERDAM',
+    price: '€ 275.000 k.k.',
+    description: 'CHARMING AND WELL-CLASS 2-ROOM APARTMENT LOCATED ON OWN GROUND IN THE BROWN HEART OF THE CENTER !! This property is very centrally located and suitable for various purposes, pied-a-terre or as a home for yourself in a prime location.',
+    photo: 'https://bb2.goesenroos.nl/bgmRappange/WONEN/2018020814550225/Hekelveld%203-2%20Amsterdam%20(4).JPG',
+    prop_url: 'http://www.rappange.com/Hekelveld-3-II-AMSTERDAM-2018020814550225',
+    XML: '',
+    user: users[0]
+  },
+  {
+    address: 'Noorderplassenweg 20 - ALMERE',
+    price: '€ 519.400 k.k.',
+    description: 'For those who have always dreamed of free living with views over the water, greenery and beach. And also the convenience of an apartment.',
+    photo: 'https://tiaramedia.nvm.nl/Opvragen.media?MediaID=104931319',
+    prop_url: 'https://www.vanderlinden.nl/koopwoning/Noorderplassenweg+20+-+ALMERE/e73c0e3f-6090-4dcd-9fc3-dbfabb4d9f8c',
+    XML: '',
+    user: users[0]
+  },
+  {
+    address: 'Family Doorzonstraat 2 - ALMERE',
+    price: '€ 425.000 k.k.',
+    description: 'Are you looking for a fantastic and charming villa located in the Stripheldenbuurt with lots of privacy? This villa is ready to move in and definitely worth a visit!',
+    photo: 'https://tiaramedia.nvm.nl/Opvragen.media?MediaID=104931319',
+    prop_url: 'https://www.vanderlinden.nl/koopwoning/Familie+Doorzonstraat+2+-+ALMERE/f3f0058f-c188-4d40-be04-0695c09f51f6',
+    XML: '',
+    user: users[1]
+  },
+  {
+    address: 'Lakenhalstraat 9 - ALMERE',
+    price: '€ 525.000 k.k.',
+    description: 'On a beautiful location in the Oostvaardersbuurt! ',
+    photo: 'https://www.vanderlinden.nl/assets/components/phpthumbof/cache/Opvragen.d99639fb22ad55c1bedbc9ee1cb8afd2.jpg',
+    prop_url: 'https://www.vanderlinden.nl/koopwoning/Lakenhalstraat+9+-+ALMERE/631dd483-55ed-4292-9b39-040c40564dfb',
+    XML: '',
+    user: users[1]
+  },
+  {
+    address: 'Jan van Goyenstraat 51 - ALMERE',
+    price: '€ 185.000 k.k.',
+    description: 'Excellent starter home with bright living room, nice kitchen, 2 bedroom, walk-in wardrobe, front and back garden with storage. ! ',
+    photo: 'https://www.vanderlinden.nl/assets/components/phpthumbof/cache/Opvragen.d527d3a9f89b4ab77f08259bf57ca03c.jpg',
+    prop_url: 'https://www.vanderlinden.nl/koopwoning/Jan+van+Goyenstraat+51+-+ALMERE/b3e977ef-4b2e-40fd-a3da-fb4cafbd650e',
+    XML: '',
+    user: users[1]
+  },
+  {
+    address: 'Salsa Street 105 - ALMERE',
+    price: '€ 175.000 k.k.',
+    description: 'This spacious 3-room apartment on the third floor is nicely laid out and located in the child-friendly neighborhood of Almere Danswijk. ',
+    photo: 'https://www.vanderlinden.nl/assets/components/phpthumbof/cache/Opvragen.0da6511d356a138743ddeefaa9dd8257.jpg',
+    prop_url: 'https://www.vanderlinden.nl/koopwoning/Salsastraat+105+-+ALMERE/98de9f97-7ca2-42f7-a9f9-032e7ed33207',
     XML: '',
     user: users[1]
   }
