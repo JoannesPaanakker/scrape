@@ -1,0 +1,72 @@
+
+<%= form_for(Property.new, as: :property, url: properties_path(:property)) do |f| %>
+<div class="field-wrap">
+  <%= f.text_field :prop_url, required: true, autofocus: true, placeholder: 'Property URL' %>
+  <%= f.text_field :description, required: false, autofocus: true, placeholder: 'Description' %>
+</div>
+<div class="field-wrap">
+  <%= f.text_field :photo, required: false, autofocus: true, placeholder: 'Photo URL' %>
+  <%= f.text_field :address, required: false, autofocus: true, placeholder: 'Address information' %>
+</div>
+<!-- end form-group -->
+<div class="field-wrap">
+  <%= f.text_field :price, required: false, autofocus: true, placeholder: 'Price information'%>
+</div>
+<div class="field-wrap">
+  <label class="control-label">Select your portal</label>
+  <select id="selectPortal">
+    <% @portals.each do |p| %>
+    <option value="<%= p.id %>"><%= p.name %></option>
+    <% end %>
+  </select>
+  <div class="field-wrap" id="portal_id">
+  </div>
+</div>
+<div class="field-wrap">
+  <%= f.submit "Register" %>
+</div>
+<% end %>
+
+  <div class="container">
+    <!-- <h1>Number of properties to publish on the network</h1> -->
+    <div style="color:red;"><center>*€50 setup fee applies to all packages</center></div>
+
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-3">
+        <div class="wrapper">Classic package 20 properties for €46.00/mo. <br><p style="color:green;">access to 30 million potential buyers</p></div>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="wrapper">Premium package 50 properties for €90.00/mo. <br><p style="color:green;"> access to 70 million potential buyers</p></div>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="wrapper">Go pro package 100 properties for €125.00/mo. <br><p style="color:green;">access to 110 million potential buyers</p></div>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="wrapper">Platinum package 200 properties for €200.00/mo. <br><p style="color:green;">access to 140 million potential buyers</p></div>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+
+
+
+
+
+  <div class="container">
+    <h2 align="center">Billing Frequency</h2>
+    <div class="row text-center">
+
+      <div class="col-xs-4">
+        <div class="wrapper">Every 3 months <br><p style="color:green;">Save 0%</p></div>
+      </div>
+
+      <div class="col-xs-4">
+        <div class="wrapper">Every 6 months <br><p style="color:green;">Save 15%</p></div>
+      </div>
+
+      <div class="col-xs-4">
+        <div class="wrapper">Every 12 months <br><p style="color:green;">Save 20%</p></div>
+      </div>
+    </div>
+  </div>

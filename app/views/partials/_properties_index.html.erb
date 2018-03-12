@@ -1,0 +1,10 @@
+    <ul>
+    <% @properties.each do |prop| %>
+      <li>
+          <%= image_tag 'https://images.realworks.nl/servlets/images/media.objectmedia/61498158.jpg?height=1200&check=sha256%3A656b883a320abeb8aabfab50d97558eb83c33ddd2d0518f1e54d7f499793ff9c&width=1200&resize=1', style: "width: 60px" %>
+          <%= prop.address %>, <%= prop.portal_id %>
+      </li>
+      <br>
+    <% end %>
+    </ul>
+

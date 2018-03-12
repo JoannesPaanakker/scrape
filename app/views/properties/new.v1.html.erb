@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row text-center">
+    <h3 style="margin-bottom: 30px;">Request Feed Set Up</h3>
+    <div class="col-xs-12 text-center"><!--
+      <form id="sendXml" method="post" action="#" class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"> -->
+      <%= form_for(Property.new, as: :property, url: properties_path(:property)) do |f| %>
+        <div class="field-wrap">
+          <div>
+<!--           <input type="text" id="contact-name" name="contact-name" placeholder="Contact Name 'Only Alphanumeric'" class="spacing" required=""> -->
+          <%= f.text_field :prop_url, required: true, autofocus: true, placeholder: 'Property URL' %>
+          <%= f.text_field :description, required: false, autofocus: true, placeholder: 'Description' %>
+        </div>
+        <!-- end form-group -->
+
+        <div class="field-wrap">
+          <%= f.text_field :photo, required: false, autofocus: true, placeholder: 'Photo URL' %>
+          <%= f.text_field :address, required: false, autofocus: true, placeholder: 'Address information' %>
+        </div>
+        <!-- end form-group -->
+        <div class="field-wrap">
+          <%= f.text_field :price, required: false, autofocus: true, placeholder: 'Price information'%>
+        </div>
+        <%= f.submit "Register" %>
+      <% end %>
+<!--       </form> -->
+    </div>
+  </div>
+</div>
+

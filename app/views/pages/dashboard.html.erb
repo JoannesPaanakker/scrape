@@ -31,7 +31,7 @@
         <li class="sidebar-item"><%= link_to "Listings", properties_path %></li>
         <li class="sidebar-item"><%= link_to "Upgrade", packages_path %></li>
         <li class="sidebar-item"><%= link_to "Portal List", portals_path %></li>
-        <li class="sidebar-item"><%= link_to "Request feeds", prices_path%></li>
+        <li class="sidebar-item"><%= link_to "Request feeds", new_property_path%></li>
         <li class="sidebar-item"><a><%= link_to "User details", edit_user_registration_path %></a>
         <li class="sidebar-item"><a> <%= link_to destroy_user_session_path, method: :delete do %>
           <%= t(".sign_out", default: "Log out") %>
@@ -87,7 +87,7 @@
         <div class="card-block">
           <h3 class="card-title">Request a feed</h3>
           <p class="card-text">Request a new feed to upload new listings</p>
-          <button class="btn btn-primary card-buttons"><%= link_to "See Details", prices_path%></button>
+          <button class="btn btn-primary card-buttons"><%= link_to "See Details", new_property_path%></button>
         </div>
       </div>
     </div>

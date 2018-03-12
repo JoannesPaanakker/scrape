@@ -9,3 +9,7 @@
 
 import 'bootstrap';
 console.log('Hello World from Webpacker')
+
+import { bindButton } from "../properties/add-portal";
+
+bindButton() ;

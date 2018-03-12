@@ -6,10 +6,13 @@
 
   def dashboard
     @portals = Portal.all
+    @properties = Property.all
   end
 
   def prices
+  end
 
+  def test
   end
 
    private
