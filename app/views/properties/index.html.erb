@@ -1,20 +1,84 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="navbar-header">
+    <a class="navbar-name"> <%= link_to "Scriblix", root_path, class:"logo-topbar" %> </a>
+  </div>
+
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+
+  <ul class="nav navbar-nav navbar-left navbar-top-links">
+  </ul>
+</nav>
+
+
+<div class="body-content">
+  <div id="sidebar">
+    <!-- Sidebar Header -->
+    <div class="sidebar-header">
+    </div>
+    <!-- Sidebar Links -->
+    <ul class="list-unstyled text-sidebar">
+      <li class="active sidebar-item"><%= link_to "Home", root_path%></li>
+
+      <li><!-- Link with dropdown items -->
+        <ul class="collapse list-unstyled" id="homeSubmenu">
+        </ul>
+        <li class="sidebar-item"><%= link_to "Listings", properties_path %></li>
+        <li class="sidebar-item"><%= link_to "Upgrade", packages_path %></li>
+        <li class="sidebar-item"><%= link_to "Portal List", portals_path %></li>
+        <li class="sidebar-item"><%= link_to "Request feeds", prices_path%></li>
+        <li class="sidebar-item"><a><%= link_to "User details", edit_user_registration_path %></a>
+          <li class="sidebar-item"><a> <%= link_to destroy_user_session_path, method: :delete do %>
+            <%= t(".sign_out", default: "Log out") %>
+            <% end %></a></li>
+
+          </li>
+        </li>
+      </ul>
+    </li>
+    <div class="container">
+      <div class="row">
+        <button id="myButton" class="btn btn-primary card-buttons"><%= link_to "Add a Property", dashboard_path %></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<h1>Current Listings</h1>
+
+
+
 
 
     <ul>
     <% @properties.each do |prop| %>
-      <li>
-          <%= image_tag 'https://images.realworks.nl/servlets/images/media.objectmedia/61498158.jpg?height=1200&check=sha256%3A656b883a320abeb8aabfab50d97558eb83c33ddd2d0518f1e54d7f499793ff9c&width=1200&resize=1', style: "width: 60px" %>
-          <%= prop.address %>, <%= prop.portal_id %>
-      </li>
-      <br>
+
+      <div class="col-xs-12 col-sm-3 spec-object spec_odd firstSpec spec1 status_aktief">
+        <div class="spec-object-item">
+          <div class="spec_img_container">
+            <img src=<%= prop.photo %> class="spec_img img-responsive" alt="Hasebroekstraat 1-IV"></div>
+            <div class="spec_address"><h3><%= prop.address %></h3>
+              <div class="spec_description"><h4><%= prop.description %></h4>
+
+              </div>
+              <div class="spec_price"><h5><%= prop.price %></h5>
+                </div>
+            </div>
+        </div>
+      </div>
+
     <% end %>
     </ul>
 
 
 
-<div class="container">
-  <button class="btn-back text-center" id="stupid-btn">
-    <%= link_to "Add Property", dashboard_path, class:"my-btn" %>
-  </button>
-</div>
+
+
+
 
