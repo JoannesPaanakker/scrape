@@ -1,4 +1,6 @@
 class PropertiesController < ApplicationController
+  require 'nokogiri'
+  require 'open-uri'
 
   def index
       @properties = Property.where(user_id: current_user)
@@ -7,15 +9,20 @@ class PropertiesController < ApplicationController
 
   def create
     @property = Property.new(property_params)
+    @property.portal_id = params[:portal_id]
     @property.user = current_user
+    html_file = open(@property.prop_url).read
+    @property.HTML = Nokogiri::HTML(html_file)
+    @property.XML = Nokogiri::XML(html_file)
     # authorize @property
-    raise
+    # raise
     @property.save!
     redirect_to properties_path
   end
 
   def new
     @property = Property.new
+    @portals = Portal.all
     # authorize @property
   end
 
