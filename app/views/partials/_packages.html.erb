@@ -1,30 +1,21 @@
 <h1 align="center">Packages</h1>
+
 <div class="container">
   <div class="row">
     <% @packages.each do |pack| %>
       <div class="col-xs-12 col-sm-4">
 
         <% image = image_path 'logo.jpg' %>
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image %>')">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://livewallpaperhd.com/wp-content/uploads/2017/07/Dark-Elegant-Wallpaper.jpg)">
           <div class="card-description">
             <h2><%= pack.name %></h2>
           </div>
           <p><%= humanized_money_with_symbol(pack.price) %> per Month</p>
 
-
         <!-- <div class="card-link text-center"> -->
           <%= link_to package_path(pack) do %>
             <h4>Details and Buy</h4>
           <% end  %>
-<!--         </div> -->
-
-
-
-<!--           <button class="btn btn-primary card-buttons">
-            <%#= link_to "details", package_path(pack) %>
-          </button> -->
-
-
         </div>
       </div>
     <% end %>
