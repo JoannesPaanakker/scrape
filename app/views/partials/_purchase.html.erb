@@ -1,4 +1,5 @@
-<h1>Package Purchase<%= @order.package_sku %></h1>
+<h1 id="order-text">Package Purchase <%= @order.package_sku %></h1>
+<div class='order-container'>
 <%= form_tag order_payments_path(@order) do %>
   <article>
     <label class="amount">
@@ -16,3 +17,4 @@
     data-currency="<%= @order.amount.currency %>"></script>
 
 <% end %>
+</div>
