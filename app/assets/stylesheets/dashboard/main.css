@@ -28,6 +28,10 @@ a:active {
 
 body {
   background-color: #383838;
+  color: black;
+}
+
+h3 {
   color: white;
 }
 

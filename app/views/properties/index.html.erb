@@ -40,21 +40,14 @@
         </li>
       </ul>
     </li>
-    <div class="container">
-      <div class="row">
-        <button id="myButton" class="btn btn-primary card-buttons"><%= link_to "Add a Property", dashboard_path %></button>
-      </div>
-    </div>
+
   </div>
 </div>
-
-
 <h1 class="properties-title">Current Listings</h1>
-
-
 
 <div class="container properties-cards">
   <ul>
+
     <% @properties.each do |prop| %>
 
     <div class="col-xs-12 col-sm-3">
@@ -62,7 +55,7 @@
         <div class="spec_img_container">
           <img src=<%= prop.photo %> class="spec_img img-responsive" alt="Property Photo"></img>
           <div class="spec_address"><%= prop.address %></div>
-          <div class ="spec_portal"><%= prop.portal_id %></div>
+          <div class ="spec_portal">Published on Portal: <%= prop.portal_id %></div>
           <div class="spec_price"><h5><%= prop.price %></h5></div>
           </div>
         </div>
