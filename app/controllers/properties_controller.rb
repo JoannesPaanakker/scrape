@@ -32,6 +32,12 @@ class PropertiesController < ApplicationController
     # authorize @property
   end
 
+  def destroy
+    @property = Property.find(params[:id])
+    @property.destroy
+    redirect_to properties_path
+  end
+
   def get_data_from_HTML(doc)
     @property.address = doc.search('.street-address').text #ad postal code and locality
     @property.price = doc.search('.saleprice').text
