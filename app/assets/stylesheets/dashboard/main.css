@@ -32,6 +32,10 @@ body {
 }
 
 h3 {
-  color: white;
+  color: black;
+}
+
+.card-dashboard {
+  border-radius: 5px;
 }
 
