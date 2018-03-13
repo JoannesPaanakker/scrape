@@ -14,6 +14,7 @@ class PropertiesController < ApplicationController
     html_file = open(@property.prop_url).read
     @property.HTML = Nokogiri::HTML(html_file)
     @property.XML = Nokogiri::XML(html_file)
+    get_data_from_HTML(Nokogiri::HTML(html_file))
     # authorize @property
     # raise
     @property.save!
@@ -27,8 +28,15 @@ class PropertiesController < ApplicationController
   end
 
   def show
-    @property = property.find(params[:id])
+    @property = Property.find(params[:id])
     # authorize @property
+  end
+
+  def get_data_from_HTML(doc)
+    @property.address = doc.search('.street-address').text #ad postal code and locality
+    @property.price = doc.search('.saleprice').text
+    @property.description = doc.search('#Omschrijving').text
+    @property.photo = doc.search('.foto_').attr("src").value
   end
 
   private
