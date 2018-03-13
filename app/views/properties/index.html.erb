@@ -49,30 +49,27 @@
 </div>
 
 
-<div>
-  <h1>Current Listings</h1>
+<h1 class="properties-title">Current Listings</h1>
+
+
+
+<div class="container properties-cards">
   <ul>
     <% @properties.each do |prop| %>
-      <div class="col-xs-12 col-lg-3">
-        <div class="spec-object-item">
-          <div class="spec_img_container">
-            <img src=<%= prop.photo %> class="spec_img img-responsive" alt="Property Photo"></div>
-            <div class="spec_address"><h3><%= prop.address %></h3>
-              <div class="spec_description"><h4><%= prop.description %></h4>
-              </div>
-              <div class="spec_price"><h5><%= prop.price %></h5>
-                <%= link_to "Property Details", property_path(prop), class:"btn btn-primary" %>
-              </div>
-            </div>
+
+    <div class="col-xs-12 col-sm-3 spec-object spec_odd firstSpec spec1 status_aktief">
+      <div class="spec-object-item">
+        <div class="spec_img_container">
+          <img src=<%= prop.photo %> class="spec_img img-responsive" alt="Property Photo"></img>
+          <div class="spec_address"><h3><%= prop.address %></h3></div>
+            <div class="spec_price"><h5><%= prop.price %></h5></div>
           </div>
         </div>
       </div>
-    <% end %>
-  </ul>
+      <% end %>
+    </ul>
+  </div>
 </div>
-
-
-
 
 
 

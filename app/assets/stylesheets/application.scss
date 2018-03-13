@@ -14,6 +14,7 @@
 @import "components/index";
 @import "pages/index";
 // Dashboard partials
+@import "components/bundle";
 @import "dashboard/cards";
 @import "dashboard/sidebar";
 @import "dashboard/buttons";
@@ -22,4 +23,6 @@
 @import "components/prices";
 @import "components/properties";
 @import "components/xml"
+@import "properties/cards";
+
 
