@@ -1,3 +1,62 @@
+
+<h1 style="color:white;" align="center">Portals</h1>
+
+<button class="btn-back text-center" id="stupid-btn">
+  <%= link_to "Dashboard", dashboard_path, class: 'btn btn-primary' %>
+</button>
+
+<div class="container">
+  <div class="row">
+    <% @portals.each do |portal| %>
+    <div class="col-xs-12 col-sm-4">
+      <% if portal.country == "UK" %>
+      <% image = "https://kitt.lewagon.com/placeholder/cities/london" %>
+      <% elsif portal.country == "France" %>
+      <% image = "https://kitt.lewagon.com/placeholder/cities/paris" %>
+      <% elsif portal.country == "Germany" %>
+      <% image = "https://kitt.lewagon.com/placeholder/cities/berlin" %>
+      <% elsif portal.country == "Europe" %>
+      <% image = "https://vignette.wikia.nocookie.net/althistory/images/b/bc/Europe_flags.png/revision/latest?cb=20140708194510" %>
+      <% elsif portal.country == "Thailand" %>
+      <% image = "http://thailandvacations.biz/wp-content/uploads/2017/10/Thailand-travel-tips-1.jpg" %>
+      <% elsif portal.country == "Netherlands" %>
+      <% image = "https://kitt.lewagon.com/placeholder/cities/amsterdam" %>
+      <% elsif portal.country == "Japan" %>
+      <% image = "https://kitt.lewagon.com/placeholder/cities/tokyo" %>
+      <% elsif portal.country == "Spain" %>
+      <% image = "https://t-ec.bstatic.com/images/hotel/max1024x768/104/104113620.jpg" %>
+      <% elsif portal.country == "Turkey" %>
+      <% image = "https://i1.wp.com/www.skymotionvideo.com/wp-content/uploads/2013/01/Istanbul-02.jpg?resize=800%2C450&ssl=1" %>
+      <% elsif portal.country == "Russia" %>
+      <% image = "https://www.nationalgeographic.com/content/dam/travel/Guide-Pages/europe/russia/russia.jpg" %>
+      <% elsif portal.country == "Global portal" %>
+      <% image = "https://dollarsandsense.sg/wp-content/uploads/2017/08/Fixed-Deposits-Around-The-World.jpg" %>
+      <% elsif portal.country == "Australia" %>
+      <% image = "https://22246-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2016/10/How-much-does-it-cost-to-travel-in-Australia-102-1024x680.jpg" %>
+      <% else  %>
+      <% image = "https://kitt.lewagon.com/placeholder/cities/shanghai" %>
+      <% end %>
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url('<%= image %>');">
+        <div class="card-category"><%= portal.country %></div>
+        <div class="card-description">
+          <h2><%= portal.name %></h2>
+          <p><%= portal.portal_url %></p>
+          <%= portal.cost %>
+
+
+
+          <% if portal.premium %>
+          <p class = "premium" ><strong>!!!! Subscription !!!</strong></p>
+          <% else %>
+          <p class = "free"><p style="color:green;">!!!! FREE !!!!</p>
+          <% end %>
+
+
+        </div>
+
+        <a class="card-link" href="<%= portal.portal_url %>" ></a>
+      </div>
+
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="navbar-header">
     <a class="navbar-name"> <%= link_to "Scriblix", root_path, class:"logo-topbar" %> </a>
@@ -16,6 +75,7 @@
   <div id="sidebar">
     <!-- Sidebar Header -->
     <div class="sidebar-header">
+
     </div>
     <!-- Sidebar Links -->
     <ul class="list-unstyled text-sidebar">
