@@ -45,7 +45,7 @@
 </div>
 <h1 class="properties-title">Current Listings</h1>
 
-<div class="container properties-cards">
+<div class="container properties-cards all-cards-row">
   <ul>
 
     <% @properties.each do |prop| %>
@@ -55,12 +55,14 @@
         <div class="spec_img_container">
           <img src=<%= prop.photo %> class="spec_img img-responsive" alt="Property Photo"></img>
           <div class="spec_address"><%= prop.address %></div>
+
           <div class ="spec_portal">
             <% if prop.portal %>
             Published on Portal:
             <%= prop.portal.name %>,
             <%= prop.portal.country %>
             <% end %>
+
           </div>
           <div class="spec_price">
             <h5><%= prop.price %></h5>
