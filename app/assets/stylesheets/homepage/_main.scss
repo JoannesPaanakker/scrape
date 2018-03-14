@@ -3424,7 +3424,14 @@ footer .row {
     position: relative;
 }
 
+
+
+#mc-form {
+  position: relative !important;
+}
+
 .footer-subscribe #mc-form {
+  // position: relative !important;
     width: 100%;
 }
 
@@ -3480,6 +3487,8 @@ footer .row {
     font-family: "montserrat-regular", sans-serif;
     font-size: 1.3rem;
     padding: 0 2rem;
+    position: absolute;
+    right: 0;
 }
 
 .footer-subscribe #mc-form label i {
