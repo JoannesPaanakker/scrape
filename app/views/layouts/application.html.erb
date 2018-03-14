@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>TODO</title>
+    <title>Scriblix has been developed by a team of developers who understand business. Our goal is to offer the best service possible on the market.</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <% if controller_name == "pages" && action_name == "homepage" %>
@@ -12,6 +12,7 @@
       <%= stylesheet_link_tag 'application', media: 'all' %>
     <% end %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+    <%= favicon_link_tag %>
   </head>
   <body>
     <%= render 'shared/flashes' %>
