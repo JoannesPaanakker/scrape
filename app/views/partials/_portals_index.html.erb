@@ -1,6 +1,6 @@
-<h3 align="center">List of Portals</h3>
+<h1 class="properties-title">Portals</h1>
 
-<div class="container">
+<div class="container properties-cards">
   <div class="row">
     <% @portals.each do |portal| %>
     <div class="col-xs-12 col-sm-4">
@@ -32,15 +32,17 @@
       <% image = "https://kitt.lewagon.com/placeholder/cities/shanghai" %>
       <% end %>
       <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url('<%= image %>');">
-        <div class="card-category"><%= portal.country %></div>
+        <div class="card-category">
+          <%= portal.country %>
+        </div>
         <div class="card-description">
           <h2><%= portal.name %></h2>
           <p><%= portal.portal_url %></p>
           <%= portal.cost %>
           <% if portal.premium %>
-          <p class = "premium" ><strong>!!!! Subscription !!!</strong></p>
-          <% else %>
-          <p class = "free"><p style="color:green;">!!!! FREE !!!!</p>
+            <p class = "premium" ><strong>!!!! Subscription !!!</strong></p>
+            <% else %>
+            <p class = "free"><p style="color:green;">!!!! FREE !!!!</p>
           <% end %>
         </div>
       </div>
@@ -48,7 +50,7 @@
     <% end %>
   </div>
 </div>
-</div>
+
 
 
 

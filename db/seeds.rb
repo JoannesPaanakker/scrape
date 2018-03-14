@@ -41,7 +41,7 @@ access to 140 million potential buyers",
 },
 ])
 
-portal = Portal.create([
+portals = Portal.create([
   {name: 'Funda', country: 'Netherlands', portal_url: 'https://www.funda.nl/', premium: true, cost: 200},
   {name: 'Kyero', country: 'Spain', portal_url: 'https://www.kyero.com/', premium: true, cost: 170},
   {name: 'Emlaktown', country: 'Turkey', portal_url: 'https://www.emlaktown.com/', premium: true, cost: 120},
@@ -200,11 +200,47 @@ portal = Portal.create([
 
 
 users = User.create([
-  {email: 'bart.simpson@property.com', first_name: 'bart', last_name: 'simpson', password: '123456', comp_name: 'property', comp_url: 'http://www.walkersestates.co.uk/', phone_number: '01277 355005​', address: '90 High Street,Ingatestone, Essex, CM4 9DW'},
-  {email: 'peter.griffin@property1.com', first_name: 'peter', last_name: 'griffin', password: '123456', comp_name: 'property', comp_url: 'http://www.swlp.co.uk/index.php', phone_number: '020 8767 0894', address: '195 Franciscan Road, Tooting, London, SW17 8HJ'},
-  {email: 'phillip.fry@property2.com', first_name: 'bart', last_name: 'simpson', password: '123456', comp_name: 'property', comp_url: 'https://www.jamespendleton.co.uk', phone_number: '020 3627 7777', address: '185 Battersea High Street, SW11 3JS'},
-
-  ])
+  {
+    email: 'bart.simpson@property.com',
+    first_name: 'bart',
+    last_name: 'simpson',
+    password: '123456',
+    comp_name: 'Booij Makelaars',
+    comp_url: 'http://www.booijoz.nl/',
+    phone_number: '+31(0)20-4222888',
+    address: 'Prinsengracht 414, 1016 JC Amsterdam'
+  },
+  {
+    email: 'peter.griffin@property1.com',
+    first_name: 'peter',
+    last_name: 'griffin',
+    password: '123456',
+    comp_name: 'property',
+    comp_url: 'http://www.swlp.co.uk/index.php',
+    phone_number: '020 8767 0894',
+    address: '195 Franciscan Road, Tooting, London, SW17 8HJ'
+  },
+  {
+    email: 'phillip.fry@property2.com',
+    first_name: 'bart',
+    last_name: 'simpson',
+    password: '123456',
+    comp_name: 'property',
+    comp_url: 'https://www.jamespendleton.co.uk',
+    phone_number: '020 3627 7777',
+    address: '185 Battersea High Street, SW11 3JS'
+  },
+  {
+    email: 'leon@evk.com',
+    first_name: 'Leon',
+    last_name: 'Henry',
+    password: '123456',
+    comp_name: 'Engel & Völkers',
+    comp_url: 'https://www.engelvoelkers.com/',
+    phone_number: '+49(0)40 36 13 10',
+    address: ' Stadthausbrücke 5, 20355 Hamburg, Germany '
+  },
+])
 
 
 properties = Property.create!([
@@ -215,7 +251,8 @@ properties = Property.create!([
     photo: '//bb2.goesenroos.nl/bgmRappange/WONEN/2017090808483725/Marinaweg%2087%20Almere%20(6).JPG',
     prop_url: 'http://www.rappange.com/Marinaweg-87-ALMERE-2017090808483725',
     XML: '',
-    user: users[0]
+    user: users[0],
+    portal: portals[10],
   },
   {
     address: 'Keizersgracht 572 AMSTERDAM',
@@ -224,7 +261,8 @@ properties = Property.create!([
     photo: '//bb2.goesenroos.nl/bgmRappange/WONEN/2018010816271525/Keizersgracht%20572-0262.jpg',
     prop_url: 'http://www.rappange.com/Keizersgracht-572-AMSTERDAM-2018010816271525',
     XML: '',
-    user: users[0]
+    user: users[0],
+    portal: portals[10],
   },
   {
     address: 'Sinjeur Semeynsstraat 764 - AMSTERDAM',
@@ -233,7 +271,8 @@ properties = Property.create!([
     photo: 'https://tiaramedia.nvm.nl/Opvragen.media?MediaID=106493299',
     prop_url: 'https://www.vanderlinden.nl/koopwoning/Sinjeur+Semeynsstraat+76+-+AMSTERDAM/6e18e454-18b4-415c-a7c7-e929140a3b34',
     XML: '',
-    user: users[1]
+    user: users[1],
+    portal: portals[10],
   },
   {
     address: 'Bos en Lommerplantsoen 73H - AMSTERDAM',
@@ -242,7 +281,8 @@ properties = Property.create!([
     photo: 'https://tiaramedia.nvm.nl/Opvragen.media?MediaID=107410624',
     prop_url: 'https://www.vanderlinden.nl/koopwoning/Bos+en+Lommerplantsoen+73+-+AMSTERDAM/51db0193-b209-4a54-920e-01bec95e3b2e',
     XML: '',
-    user: users[1]
+    user: users[1],
+    portal: portals[20],
   },
 
   {
@@ -252,7 +292,8 @@ properties = Property.create!([
     photo: 'https://bb2.goesenroos.nl/bgmRappange/WONEN/2018020814550225/Hekelveld%203-2%20Amsterdam%20(4).JPG',
     prop_url: 'http://www.rappange.com/Hekelveld-3-II-AMSTERDAM-2018020814550225',
     XML: '',
-    user: users[0]
+    user: users[0],
+    portal: portals[20],
   },
   {
     address: 'Noorderplassenweg 20 - ALMERE',
@@ -261,7 +302,8 @@ properties = Property.create!([
     photo: 'https://tiaramedia.nvm.nl/Opvragen.media?MediaID=104931319',
     prop_url: 'https://www.vanderlinden.nl/koopwoning/Noorderplassenweg+20+-+ALMERE/e73c0e3f-6090-4dcd-9fc3-dbfabb4d9f8c',
     XML: '',
-    user: users[0]
+    user: users[0],
+    portal: portals[30],
   },
   {
     address: 'Family Doorzonstraat 2 - ALMERE',
@@ -270,7 +312,8 @@ properties = Property.create!([
     photo: 'https://tiaramedia.nvm.nl/Opvragen.media?MediaID=104931319',
     prop_url: 'https://www.vanderlinden.nl/koopwoning/Familie+Doorzonstraat+2+-+ALMERE/f3f0058f-c188-4d40-be04-0695c09f51f6',
     XML: '',
-    user: users[1]
+    user: users[1],
+    portal: portals[30],
   },
   {
     address: 'Lakenhalstraat 9 - ALMERE',
@@ -279,7 +322,8 @@ properties = Property.create!([
     photo: 'https://www.vanderlinden.nl/assets/components/phpthumbof/cache/Opvragen.d99639fb22ad55c1bedbc9ee1cb8afd2.jpg',
     prop_url: 'https://www.vanderlinden.nl/koopwoning/Lakenhalstraat+9+-+ALMERE/631dd483-55ed-4292-9b39-040c40564dfb',
     XML: '',
-    user: users[1]
+    user: users[1],
+    portal: portals[40],
   },
   {
     address: 'Jan van Goyenstraat 51 - ALMERE',
@@ -288,7 +332,8 @@ properties = Property.create!([
     photo: 'https://www.vanderlinden.nl/assets/components/phpthumbof/cache/Opvragen.d527d3a9f89b4ab77f08259bf57ca03c.jpg',
     prop_url: 'https://www.vanderlinden.nl/koopwoning/Jan+van+Goyenstraat+51+-+ALMERE/b3e977ef-4b2e-40fd-a3da-fb4cafbd650e',
     XML: '',
-    user: users[1]
+    user: users[1],
+    portal: portals[40],
   },
   {
     address: 'Salsa Street 105 - ALMERE',
@@ -297,7 +342,8 @@ properties = Property.create!([
     photo: 'https://www.vanderlinden.nl/assets/components/phpthumbof/cache/Opvragen.0da6511d356a138743ddeefaa9dd8257.jpg',
     prop_url: 'https://www.vanderlinden.nl/koopwoning/Salsastraat+105+-+ALMERE/98de9f97-7ca2-42f7-a9f9-032e7ed33207',
     XML: '',
-    user: users[1]
+    user: users[1],
+    portal: portals[40],
   }
 ])
 
