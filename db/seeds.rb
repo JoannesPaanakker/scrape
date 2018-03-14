@@ -240,8 +240,8 @@ users = User.create([
     phone_number: '+49(0)40 36 13 10',
     address: ' Stadthausbrücke 5, 20355 Hamburg, Germany '
   },
-    {
-    email: 'Newyorkrealestate@newyork.com',
+  {
+    email: 'jack@newyork.com',
     first_name: 'Jack',
     last_name: 'William',
     password: '123456',

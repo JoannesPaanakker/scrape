@@ -43,16 +43,26 @@ class PropertiesController < ApplicationController
       comp_booij(doc)
     elsif current_user.comp_name == "Engel & Völkers"
       comp_evk(doc)
+    elsif current_user.comp_name == "Townresidential"
+      comp_town(doc)
     else
       # do this
     end
+  end
+
+  def comp_town(doc)
+    @property.address = doc.search('.address').text + doc.search('.locality')[0].text
+    @property.price = doc.search('.price__value')[0].text
+    @property.description = doc.search('.p').text
+    @property.photo = doc.search('.photo')[2].attr('src')
   end
 
   def comp_evk(doc)
     # @property.address = doc.search('.ev-exposee-content').search('.ev-exposee-subtitle') #ad postal code and locality
     @property.description = doc.search('.ev-exposee-text').text
     @property.price = doc.search('.ev-key-fact-value').text
-    @property.photo = "//www.clipartbest.com/cliparts/LcK/Bjz/LcKBjzBca.jpeg"
+    @property.photo = "https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2013%2F07%2F13%2F11%2F54%2Fhouse-158939_640.png&f=1"
+    @property.photo = doc.search('.smartimage__item').attr("src").value
   end
 
   def comp_booij(doc)
