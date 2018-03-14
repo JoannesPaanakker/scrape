@@ -1,0 +1,20 @@
+<h1 class="properties-title">Property Details</h1>
+
+<div class="container properties-cards">
+  <div class="row">
+    <div class="col-xs-6 col-lg-6">
+      <img src=<%= @property.photo %> class="spec_img img-responsive" alt="Property Photo">
+      <h2 class="prop"><%= @property.address %></h2>
+      <h2 class="prop">On Portal: <%= @property.portal.name %></h2>
+      <h4><%= @property.price %></h4>
+      <!-- <h5>Description</h5> -->
+      <p class="prop_small"><%= @property.description %></p>
+      <div class="xmlbox">
+        <%= @property.prop_url %>
+      </div>
+      <div class="xmlbox">
+        <%= @property.HTML %>
+      </div>
+    </div>
+  </div>
+</div>

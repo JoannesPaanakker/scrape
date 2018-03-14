@@ -13,7 +13,7 @@ class PropertiesController < ApplicationController
     @property.user = current_user
     html_file = open(@property.prop_url).read
     @property.HTML = Nokogiri::HTML(html_file)
-    @property.XML = Nokogiri::XML(html_file)
+    # @property.XML = Nokogiri::XML(html_file)
     get_data_from_HTML(Nokogiri::HTML(html_file))
     # authorize @property
     # raise
@@ -39,10 +39,30 @@ class PropertiesController < ApplicationController
   end
 
   def get_data_from_HTML(doc)
+    if current_user.comp_name == "Booij Makelaars"
+      comp_booij(doc)
+    elsif current_user.comp_name == "Engel & Völkers"
+      comp_evk(doc)
+    else
+      # do this
+    end
+  end
+
+  def comp_evk(doc)
+    # @property.address = doc.search('.ev-exposee-content').search('.ev-exposee-subtitle') #ad postal code and locality
+    @property.description = doc.search('.ev-exposee-text').text
+    @property.price = doc.search('.ev-key-fact-value').text
+    @property.photo = "//www.clipartbest.com/cliparts/LcK/Bjz/LcKBjzBca.jpeg"
+  end
+
+  def comp_booij(doc)
     @property.address = doc.search('.street-address').text #ad postal code and locality
     @property.price = doc.search('.saleprice').text
     @property.description = doc.search('#Omschrijving').text
-    @property.photo = doc.search('.foto_').attr("src").value
+    a = doc.search('.foto_')
+    if !a.empty?
+      @property.photo = doc.search('.foto_').attr("src").value
+    end
   end
 
   private
