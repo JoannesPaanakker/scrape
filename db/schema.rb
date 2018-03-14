@@ -89,7 +89,6 @@ ActiveRecord::Schema.define(version: 20180309123031) do
     t.string "comp_url"
     t.string "phone_number"
     t.string "address"
-    t.string "user"
     t.bigint "package_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["package_id"], name: "index_users_on_package_id"
