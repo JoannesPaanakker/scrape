@@ -200,11 +200,47 @@ portals = Portal.create([
 
 
 users = User.create([
-  {email: 'bart.simpson@property.com', first_name: 'bart', last_name: 'simpson', password: '123456', comp_name: 'property', comp_url: 'http://www.walkersestates.co.uk/', phone_number: '01277 355005​', address: '90 High Street,Ingatestone, Essex, CM4 9DW'},
-  {email: 'peter.griffin@property1.com', first_name: 'peter', last_name: 'griffin', password: '123456', comp_name: 'property', comp_url: 'http://www.swlp.co.uk/index.php', phone_number: '020 8767 0894', address: '195 Franciscan Road, Tooting, London, SW17 8HJ'},
-  {email: 'phillip.fry@property2.com', first_name: 'bart', last_name: 'simpson', password: '123456', comp_name: 'property', comp_url: 'https://www.jamespendleton.co.uk', phone_number: '020 3627 7777', address: '185 Battersea High Street, SW11 3JS'},
-
-  ])
+  {
+    email: 'bart.simpson@property.com',
+    first_name: 'bart',
+    last_name: 'simpson',
+    password: '123456',
+    comp_name: 'Booij Makelaars',
+    comp_url: 'http://www.booijoz.nl/',
+    phone_number: '+31(0)20-4222888',
+    address: 'Prinsengracht 414, 1016 JC Amsterdam'
+  },
+  {
+    email: 'peter.griffin@property1.com',
+    first_name: 'peter',
+    last_name: 'griffin',
+    password: '123456',
+    comp_name: 'property',
+    comp_url: 'http://www.swlp.co.uk/index.php',
+    phone_number: '020 8767 0894',
+    address: '195 Franciscan Road, Tooting, London, SW17 8HJ'
+  },
+  {
+    email: 'phillip.fry@property2.com',
+    first_name: 'bart',
+    last_name: 'simpson',
+    password: '123456',
+    comp_name: 'property',
+    comp_url: 'https://www.jamespendleton.co.uk',
+    phone_number: '020 3627 7777',
+    address: '185 Battersea High Street, SW11 3JS'
+  },
+  {
+    email: 'leon@evk.com',
+    first_name: 'Leon',
+    last_name: 'Henry',
+    password: '123456',
+    comp_name: 'Engel & Völkers',
+    comp_url: 'https://www.engelvoelkers.com/',
+    phone_number: '+49(0)40 36 13 10',
+    address: ' Stadthausbrücke 5, 20355 Hamburg, Germany '
+  },
+])
 
 
 properties = Property.create!([

@@ -55,25 +55,28 @@
         <div class="spec_img_container">
           <img src=<%= prop.photo %> class="spec_img img-responsive" alt="Property Photo"></img>
           <div class="spec_address"><%= prop.address %></div>
-            <div class ="spec_portal">
-              <% if prop.portal %>
-                Published on Portal:
-                <%= prop.portal.name %>,
-                <%= prop.portal.country %>
-              <% end %>
-            </div>
-            <div class="spec_price">
-              <h5><%= prop.price %></h5>
-            </div>
-            <button class = "btn btn-primary small">
-              <%= link_to 'delete',  property_path(prop),  method: :delete, data: { confirm: 'Are you sure?' } %>
-            </button>
+          <div class ="spec_portal">
+            <% if prop.portal %>
+            Published on Portal:
+            <%= prop.portal.name %>,
+            <%= prop.portal.country %>
+            <% end %>
           </div>
+          <div class="spec_price">
+            <h5><%= prop.price %></h5>
+          </div>
+          <button class = "btn btn-primary small2">
+            <%= link_to 'details',  property_path(prop) %>
+          </button>
+          <button class = "btn btn-primary small">
+            <%= link_to 'delete',  property_path(prop),  method: :delete, data: { confirm: 'Are you sure?' } %>
+          </button>
         </div>
       </div>
-      <% end %>
-    </ul>
-  </div>
+    </div>
+    <% end %>
+  </ul>
+</div>
 </div>
 
 

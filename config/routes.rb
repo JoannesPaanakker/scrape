@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
   get 'dashboard', to: 'pages#dashboard', as: :dashboard
-  get 'prices', to: 'pages#prices', as: :prices
-  get 'test', to: 'pages#test', as: :test
+  # get 'prices', to: 'pages#prices', as: :prices
+  get 'test', to: 'pages#test', as: :test # test page HTML
 
   devise_for :users, controllers: {
   registrations: "registrations",
