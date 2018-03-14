@@ -25,6 +25,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'money-rails'
 gem 'stripe'
 gem 'nokogiri'
+gem 'gaffe'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
