@@ -1,0 +1,25 @@
+.form-listings {
+  border: 2px solid white;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  background-color: #bcadad14;
+  color: white;
+}
+
+.sub-button {
+  margin-bottom: 50px;
+}
+
+.col-md-offset-4 {
+  margin-left: 14.333333%;
+}
+
+.properties-title-new {
+  font-weight: lighter;
+  text-align: center;
+  padding: 0px;
+  color: white;
+  font-size: 45px;
+}
