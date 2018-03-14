@@ -1,0 +1,74 @@
+.form-listings {
+  border: 2px solid white;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  background-color: #bcadad14;
+  color: white;
+}
+
+.sub-button {
+  margin-bottom: 50px;
+}
+
+.col-md-offset-4 {
+  margin-left: 14.333333%;
+}
+
+.properties-title-new {
+  font-weight: lighter;
+  text-align: center;
+  padding: 0px;
+  color: white;
+  font-size: 45px;
+}
+
+.properties-row {
+  background-color: white;
+  color: #a3a0a0;
+  padding: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.card-second-text {
+  color: #6c6868;
+  margin-top: 50px;
+  font-weight: lighter;
+}
+
+.thunder {
+  font-size: 40px;
+}
+
+.billing-row {
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.billing-title {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.billing-cards {
+  margin-bottom: 130px;
+}
+
+.discount {
+  font-weight: lighter;
+  margin-top: 50px;
+  color: green;
+}
+
+.billing-months {
+  color: #a3a0a0;
+  font-weight: bold;
+}
+
+
+
+
+
