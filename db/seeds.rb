@@ -202,8 +202,8 @@ portals = Portal.create([
 users = User.create([
   {
     email: 'bart.simpson@property.com',
-    first_name: 'bart',
-    last_name: 'simpson',
+    first_name: 'Bart',
+    last_name: 'Simpson',
     password: '123456',
     comp_name: 'Booij Makelaars',
     comp_url: 'http://www.booijoz.nl/',
@@ -222,8 +222,8 @@ users = User.create([
   },
   {
     email: 'phillip.fry@property2.com',
-    first_name: 'bart',
-    last_name: 'simpson',
+    first_name: 'Phillip',
+    last_name: 'Fry',
     password: '123456',
     comp_name: 'property',
     comp_url: 'https://www.jamespendleton.co.uk',
