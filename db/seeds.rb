@@ -275,26 +275,15 @@ properties = Property.create!([
     portal: portals[10],
   },
   {
-    address: 'Sinjeur Semeynsstraat 764 - AMSTERDAM',
-    price: '€ 225.000 k.k.',
-    description: 'Ruim 4-kamer appartement van ca. 79 m² op de vierde woonlaag van een kleinschalig appartementen complex.',
-    photo: 'https://tiaramedia.nvm.nl/Opvragen.media?MediaID=106493299',
-    prop_url: 'https://www.vanderlinden.nl/koopwoning/Sinjeur+Semeynsstraat+76+-+AMSTERDAM/6e18e454-18b4-415c-a7c7-e929140a3b34',
-    XML: '',
-    user: users[1],
-    portal: portals[10],
-  },
-  {
     address: 'Bos en Lommerplantsoen 73H - AMSTERDAM',
     price: '€ 225.000 k.k.',
     description: 'Ruim en keurig afgewerkt twee kamerappartement op zeer centrale locatie in het hippe Bos en Lommer!',
     photo: 'https://tiaramedia.nvm.nl/Opvragen.media?MediaID=107410624',
     prop_url: 'https://www.vanderlinden.nl/koopwoning/Bos+en+Lommerplantsoen+73+-+AMSTERDAM/51db0193-b209-4a54-920e-01bec95e3b2e',
     XML: '',
-    user: users[1],
+    user: users[0],
     portal: portals[20],
   },
-
   {
     address: 'Hekelveld 3 - II AMSTERDAM',
     price: '€ 275.000 k.k.',
@@ -322,7 +311,7 @@ properties = Property.create!([
     photo: 'https://tiaramedia.nvm.nl/Opvragen.media?MediaID=104931319',
     prop_url: 'https://www.vanderlinden.nl/koopwoning/Familie+Doorzonstraat+2+-+ALMERE/f3f0058f-c188-4d40-be04-0695c09f51f6',
     XML: '',
-    user: users[1],
+    user: users[0],
     portal: portals[30],
   },
   {
@@ -332,7 +321,7 @@ properties = Property.create!([
     photo: 'https://www.vanderlinden.nl/assets/components/phpthumbof/cache/Opvragen.d99639fb22ad55c1bedbc9ee1cb8afd2.jpg',
     prop_url: 'https://www.vanderlinden.nl/koopwoning/Lakenhalstraat+9+-+ALMERE/631dd483-55ed-4292-9b39-040c40564dfb',
     XML: '',
-    user: users[1],
+    user: users[0],
     portal: portals[40],
   },
   {
