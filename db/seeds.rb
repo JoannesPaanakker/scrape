@@ -221,7 +221,7 @@ users = User.create([
     address: '195 Franciscan Road, Tooting, London, SW17 8HJ'
   },
   {
-    email: 'phillip.fry@property2.com',
+    email: 'info@scriblix.com',
     first_name: 'Phillip',
     last_name: 'Fry',
     password: '123456',
