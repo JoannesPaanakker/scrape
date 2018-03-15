@@ -97,11 +97,22 @@
       <div class="card-dashboard2">
         <div>
           <h3 class="card-title">Listing totals</h3>
-          <p>Nr of properties listed: <%= @nr_of_prop %> </p>
-       <!--    <%= @hash %> -->
-          <% @hash.each do |k, v| %>
-              <%= k %>: <%= v %> <br>
-          <% end %>
+          <table style="width:75%">
+            <tr>
+              <th>Portal name</th>
+              <th>#</th>
+            </tr>
+            <% @hash.each do |k, v| %>
+              <tr>
+                <td><%= k %></td>
+                <td><%= v %></td>
+              </tr>
+            <% end %>
+            <tr>
+              <td>Total nr. of Prop</td>
+              <td><%= @nr_of_prop %></td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
@@ -110,13 +121,13 @@
         <div>
           <h3 class="card-title">Customer Details</h3>
         </div>
-        <p><%# current_user.package.name %></p>
         <p><%= current_user.comp_name %></p>
         <p><%= current_user.first_name %> <%= current_user.last_name %></p>
         <p><%= current_user.phone_number %></p>
         <p><%= current_user.address %></p>
         <p class="url"><%= link_to current_user.comp_url, current_user.comp_url %></p>
-        <p><%= current_user.last_sign_in_at %></p>
+        Current Package:
+        <p><%= current_user.package.description %></p>
       </div>
     </div>
   </div>
