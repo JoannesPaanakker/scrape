@@ -201,7 +201,7 @@ portals = Portal.create([
 
 users = User.create([
   {
-    email: 'bart.simpson@property.com',
+    email: 'info@scriblix.com',
     first_name: 'Bart',
     last_name: 'Simpson',
     password: '123456',
@@ -211,7 +211,7 @@ users = User.create([
     address: 'Prinsengracht 414, 1016 JC Amsterdam'
   },
   {
-    email: 'peter.griffin@property1.com',
+    email: 'info@scriblix.com',
     first_name: 'peter',
     last_name: 'griffin',
     password: '123456',
@@ -231,7 +231,7 @@ users = User.create([
     address: '185 Battersea High Street, SW11 3JS'
   },
   {
-    email: 'leon@evk.com',
+    email: 'info@scriblix.com',
     first_name: 'Leon',
     last_name: 'Henry',
     password: '123456',
@@ -241,7 +241,7 @@ users = User.create([
     address: ' Stadthausbrücke 5, 20355 Hamburg, Germany '
   },
   {
-    email: 'jack@newyork.com',
+    email: 'info@scriblix.com',
     first_name: 'Jack',
     last_name: 'William',
     password: '123456',
@@ -251,7 +251,7 @@ users = User.create([
     address: '33 Irving Place, New York, NY 10003 '
   },
   {
-    email: 'leon@kleier.nl',
+    email: 'info@scriblix.com',
     first_name: 'Leon',
     last_name: 'Henry',
     password: '123456',
