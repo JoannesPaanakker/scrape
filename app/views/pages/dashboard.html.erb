@@ -54,7 +54,7 @@
     <div class="col-sm-3">
       <div class="card-dashboard">
         <div class="card-block">
-          <h3 class="card-title"><h3>Listings</h3>
+          <h3 class="card-title">Listings</h3>
           <p class="card-text">See a complete list of all the listed properties placed.
           </p>
           <button class="btn btn-primary card-buttons"><%= link_to "See Details", properties_path %></button>
@@ -66,7 +66,7 @@
     <div class="col-sm-3">
       <div class="card-dashboard">
         <div class="card-block">
-          <h3 class="card-title"><h3>Upgrade</h3>
+          <h3 class="card-title">Upgrade</h3>
           <p class="card-text">Upgrade your package to add more listings and access more portals for more reach.</p>
           <button class="btn btn-primary card-buttons"><%= link_to "See Details", packages_path %></button>
         </div>
@@ -75,7 +75,7 @@
     <div class="col-sm-3">
       <div class="card-dashboard">
         <div class="card-block">
-          <h3 class="card-title"><h3>Portals</h3>
+          <h3 class="card-title">Portals</h3>
           <p class="card-text">See all the portals that we support</p>
           <button class="btn btn-primary card-buttons"><%= link_to "See Details", portals_path %>
           </button>
@@ -85,14 +85,72 @@
     <div class="col-sm-3">
       <div class="card-dashboard">
         <div class="card-block">
-          <h3 class="card-title"><h3>Request a feed</h3>
+          <h3 class="card-title">Request a feed</h3>
           <p class="card-text">Request a new feed to upload new listings</p>
           <button class="btn btn-primary card-buttons"><%= link_to "See Details", new_property_path%></button>
         </div>
       </div>
     </div>
   </div>
-</div>
+  <div class="row cards-row">
+    <div class="col-md-6">
+      <div class="card-dashboard2">
+        <div>
+          <h3 class="card-title">Listing totals</h3>
+          <p>Nr of properties listed: <%= @nr_of_prop %> </p>
+       <!--    <%= @hash %> -->
+          <% @hash.each do |k, v| %>
+              <%= k %>: <%= v %> <br>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card-dashboard2">
+        <div>
+          <h3 class="card-title">Customer Details</h3>
+        </div>
+        <p><%# current_user.package.name %></p>
+        <p><%= current_user.comp_name %></p>
+        <p><%= current_user.first_name %> <%= current_user.last_name %></p>
+        <p><%= current_user.phone_number %></p>
+        <p><%= current_user.address %></p>
+        <p><%= current_user.comp_url %></p>
+        <p><%= current_user.last_sign_in_at %></p>
+      </div>
+    </div>
+  </div>
+<!--   <div class="row cards-row">
+    <div class="col-sm-3">
+      <div class="card-dashboard2">
+        <div>
+          <h3 class="card-title">Something</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card-dashboard2">
+        <div>
+          <h3 class="card-title">Something</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card-dashboard2">
+        <div>
+          <h3 class="card-title">Something</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card-dashboard2">
+        <div>
+          <h3 class="card-title">Something</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
 
 
 

@@ -21,7 +21,9 @@
   }
 }
 .card-title {
+  margin-top: 5px;
   font-size: 25px;
+  color: #5b5a5a ;
 }
 
 .card-dashboard {
@@ -29,15 +31,26 @@
   background-color: white;
   color: #5b5a5a;
   text-shadow: none;
-  padding: 45px;
-  height: 345px;
+  padding: 20px;
+  height: 275px;
   text-align: center;
+}
+.card-dashboard2 {
+  border-radius: 5px;
+  margin-left: 20px;
+  background-color: white;
+  color: #5b5a5a;
+  text-shadow: none;
+  padding: 20px;
+  height: 350px;
+/*  text-align: center;*/
+  box-sizing: border-box;
 }
 
 .cards-row {
   margin-left: 50px;
   margin-right: 80px;
-  margin-top: 85px;
+  margin-top: 50px;
   padding: 1px !important;
 }
 
@@ -46,10 +59,6 @@
   margin-left: 150px;
   position: absolute;
   top: 50px;
-  h3 {
-  color: white;
-  }
-
 }
 
 .row {

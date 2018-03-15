@@ -5,17 +5,22 @@
   end
 
   def dashboard
-    @portals = Portal.all
-    @properties = Property.all
+    # @current_user = current_user
+    @properties = Property.where(user_id: current_user)
+    @nr_of_prop = @properties.count
+    @arr = []
+    @hash = {}
+    @properties.each do |prop|
+      if @arr.include?(prop.portal.name)
+        @hash[prop.portal.name] += 1
+      else
+        @arr << prop.portal.name
+        @hash.store(prop.portal.name, 1)
+      end
+    end
   end
 
-  def prices
-  end
-
-  def test
-  end
-
-   private
+  private
 
   def resource_name
     :user
