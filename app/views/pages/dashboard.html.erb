@@ -115,7 +115,7 @@
         <p><%= current_user.first_name %> <%= current_user.last_name %></p>
         <p><%= current_user.phone_number %></p>
         <p><%= current_user.address %></p>
-        <p><%= current_user.comp_url %></p>
+        <p class="url"><%= link_to current_user.comp_url, current_user.comp_url %></p>
         <p><%= current_user.last_sign_in_at %></p>
       </div>
     </div>
