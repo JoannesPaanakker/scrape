@@ -19,25 +19,33 @@ packages = Package.create([
     name: "Classic",
     description: "Classic package 20 properties and
 access to 30 million potential buyers",
-    price_cents: 4600
+    price_cents: 4600,
+    maxlist: 20,
+    maxport: 20
   },
   {
     name: "Premium",
     description: "Premium package 50 properties and
 access to 70 million potential buyers",
-    price_cents: 9000
+    price_cents: 9000,
+    maxlist: 50,
+    maxport: 45
   },
   {
     name: "Go Pro",
     description: "Go pro package 100 properties and
 access to 110 million potential buyers",
-    price_cents: 12500
+    price_cents: 12500,
+    maxlist: 100,
+    maxport: 70
   },
   {
   name: "Platinum",
   description: "Platinum package 200 properties and
 access to 140 million potential buyers",
-  price_cents: 20000
+  price_cents: 20000,
+  maxlist: 200,
+  maxport: 150
 },
 ])
 
@@ -208,7 +216,8 @@ users = User.create([
     comp_name: 'Booij Makelaars',
     comp_url: 'http://www.booijoz.nl/',
     phone_number: '+31(0)20-4222888',
-    address: 'Prinsengracht 414, 1016 JC Amsterdam'
+    address: 'Prinsengracht 414, 1016 JC Amsterdam',
+    package: packages[0]
   },
   {
     email: 'info@scriblix.com',
@@ -218,7 +227,8 @@ users = User.create([
     comp_name: 'property',
     comp_url: 'http://www.swlp.co.uk/index.php',
     phone_number: '020 8767 0894',
-    address: '195 Franciscan Road, Tooting, London, SW17 8HJ'
+    address: '195 Franciscan Road, Tooting, London, SW17 8HJ',
+    package: packages[0]
   },
   {
     email: 'info@scriblix.com',
@@ -228,7 +238,8 @@ users = User.create([
     comp_name: 'property',
     comp_url: 'https://www.jamespendleton.co.uk',
     phone_number: '020 3627 7777',
-    address: '185 Battersea High Street, SW11 3JS'
+    address: '185 Battersea High Street, SW11 3JS',
+    package: packages[0]
   },
   {
     email: 'info@scriblix.com',
@@ -238,7 +249,8 @@ users = User.create([
     comp_name: 'Engel & Völkers',
     comp_url: 'https://www.engelvoelkers.com/',
     phone_number: '+49(0)40 36 13 10',
-    address: ' Stadthausbrücke 5, 20355 Hamburg, Germany '
+    address: ' Stadthausbrücke 5, 20355 Hamburg, Germany ',
+    package: packages[0]
   },
   {
     email: 'info@scriblix.com',
@@ -248,7 +260,8 @@ users = User.create([
     comp_name: 'Townresidential',
     comp_url: 'http://townresidential.com',
     phone_number: '212 557 6500',
-    address: '33 Irving Place, New York, NY 10003 '
+    address: '33 Irving Place, New York, NY 10003 ',
+    package: packages[0]
   },
   {
     email: 'info@scriblix.com',
@@ -258,7 +271,8 @@ users = User.create([
     comp_name: 'Kleier Residential',
     comp_url: 'https://www.kleiers.com',
     phone_number: '+1.212.486.4860',
-    address: '415 Madison Avenue, New York, NY 10017 '
+    address: '415 Madison Avenue, New York, NY 10017 ',
+    package: packages[0]
   },
 ])
 

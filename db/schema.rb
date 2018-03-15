@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180309123031) do
+ActiveRecord::Schema.define(version: 20180315144014) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(version: 20180309123031) do
     t.datetime "updated_at", null: false
     t.integer "price_cents", default: 0, null: false
     t.string "sku"
+    t.integer "maxlist"
+    t.integer "maxport"
   end
 
   create_table "portals", force: :cascade do |t|
@@ -89,6 +91,7 @@ ActiveRecord::Schema.define(version: 20180309123031) do
     t.string "comp_url"
     t.string "phone_number"
     t.string "address"
+    t.string "user"
     t.bigint "package_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["package_id"], name: "index_users_on_package_id"
