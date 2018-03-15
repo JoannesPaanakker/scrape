@@ -31,7 +31,7 @@ button {
   vertical-align: bottom;
   bottom: 20px;
   position: absolute;
-
+  margin-left: 38px;
   background-color: #07b733;
   border-color: #06d339;
   transition-duration: 1s;

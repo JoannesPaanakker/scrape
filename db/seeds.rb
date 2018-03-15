@@ -209,7 +209,7 @@ portals = Portal.create([
 
 users = User.create([
   {
-    email: 'bart.simpson@property.com',
+    email: 'info@scriblix.com',
     first_name: 'Bart',
     last_name: 'Simpson',
     password: '123456',
@@ -220,9 +220,9 @@ users = User.create([
     package: packages[0]
   },
   {
-    email: 'peter.griffin@property1.ii',
-    first_name: 'Peter',
-    last_name: 'Griffin',
+    email: 'info@scriblix.com',
+    first_name: 'peter',
+    last_name: 'griffin',
     password: '123456',
     comp_name: 'property',
     comp_url: 'http://www.swlp.co.uk/index.php',
@@ -242,7 +242,7 @@ users = User.create([
     package: packages[0]
   },
   {
-    email: 'leon@evk.ii',
+    email: 'info@scriblix.com',
     first_name: 'Leon',
     last_name: 'Henry',
     password: '123456',
@@ -253,7 +253,7 @@ users = User.create([
     package: packages[0]
   },
   {
-    email: 'jack@newyork.ii',
+    email: 'info@scriblix.com',
     first_name: 'Jack',
     last_name: 'William',
     password: '123456',
@@ -264,7 +264,7 @@ users = User.create([
     package: packages[0]
   },
   {
-    email: 'leon@kleier.ii',
+    email: 'info@scriblix.com',
     first_name: 'Leon',
     last_name: 'Henry',
     password: '123456',
