@@ -45,9 +45,19 @@ class PropertiesController < ApplicationController
       comp_evk(doc)
     elsif current_user.comp_name == "Townresidential"
       comp_town(doc)
+    elsif current_user.comp_name == 'Kleier Residential'
+      comp_kleier(doc)
     else
       # do this
     end
+  end
+
+  def comp_kleier(doc)
+    @property.address = doc.search('.prop-info')[0].text + " " + doc.search('.prop-info')[5].text
+    @property.price = doc.search('.prop-info')[3].text
+
+    @property.description = doc.search('p')[20].text
+    @property.photo = @property.user.comp_url + doc.search('img')[2].attr('src')
   end
 
   def comp_town(doc)

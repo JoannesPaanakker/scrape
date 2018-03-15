@@ -250,6 +250,16 @@ users = User.create([
     phone_number: '212 557 6500',
     address: '33 Irving Place, New York, NY 10003 '
   },
+  {
+    email: 'leon@kleier.nl',
+    first_name: 'Leon',
+    last_name: 'Henry',
+    password: '123456',
+    comp_name: 'Kleier Residential',
+    comp_url: 'https://www.kleiers.com',
+    phone_number: '+1.212.486.4860',
+    address: '415 Madison Avenue, New York, NY 10017 '
+  },
 ])
 
 
@@ -343,6 +353,16 @@ properties = Property.create!([
     XML: '',
     user: users[1],
     portal: portals[40],
+  },
+  {
+    address: '17 East 89th Street Upper East Side',
+    price: '$11,750,000',
+    description: 'The magnificent renovation of this one of a kind home was a collaborative effort by renowned giants in the design field: designers Bunny Williams and Nancy Boszhardt as well as noted architects Hottenroth & Joseph. Additional niceties include French polished mahogany doors, custom double pane windows and doors leading to terrace, three zone central A/C, Nanz hardware, exquisite custom crown moldings, custom hardwood floors and integrated audio and lighting systems including stereo throughout. There is also a windowed laundry room (formerly staff room) with a Miele washer dryer, washing station and sink. The terraces are generously planted with boxwoods, arborvitae, dogwoods, Japanese maple trees, Japanese holly, wisteria and white birch trees.',
+    photo: 'https://www.kleiers.com/thumbnail/5143/TH/upper-east-side-1323.jpg',
+    prop_url: 'https://www.kleiers.com/listing/upper-east-side/18121447',
+    XML: '',
+    user: users[5],
+    portal: portals[75],
   }
 ])
 
