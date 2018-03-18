@@ -209,7 +209,7 @@ portals = Portal.create([
 
 users = User.create([
   {
-    email: 'info@scriblix.com',
+    email: 'bart@test.ii',
     first_name: 'Bart',
     last_name: 'Simpson',
     password: '123456',
@@ -220,7 +220,7 @@ users = User.create([
     package: packages[0]
   },
   {
-    email: 'info@scriblix.com',
+    email: 'peter@test.ii',
     first_name: 'peter',
     last_name: 'griffin',
     password: '123456',
@@ -231,7 +231,7 @@ users = User.create([
     package: packages[0]
   },
   {
-    email: 'info@scriblix.com',
+    email: 'phillip@test.ii',
     first_name: 'Phillip',
     last_name: 'Fry',
     password: '123456',
@@ -242,9 +242,9 @@ users = User.create([
     package: packages[0]
   },
   {
-    email: 'info@scriblix.com',
-    first_name: 'Leon',
-    last_name: 'Henry',
+    email: 'john@test.ii',
+    first_name: 'John',
+    last_name: 'Doe',
     password: '123456',
     comp_name: 'Engel & Völkers',
     comp_url: 'https://www.engelvoelkers.com/',
@@ -253,7 +253,7 @@ users = User.create([
     package: packages[0]
   },
   {
-    email: 'info@scriblix.com',
+    email: 'jack@test.ii',
     first_name: 'Jack',
     last_name: 'William',
     password: '123456',
@@ -264,9 +264,9 @@ users = User.create([
     package: packages[0]
   },
   {
-    email: 'info@scriblix.com',
-    first_name: 'Leon',
-    last_name: 'Henry',
+    email: 'sophie@test.ii',
+    first_name: 'Sophie',
+    last_name: 'Kleier',
     password: '123456',
     comp_name: 'Kleier Residential',
     comp_url: 'https://www.kleiers.com',

@@ -8,6 +8,6 @@ class UserMailer < ApplicationMailer
   def welcome(user)
     @user = user.first_name
 
-    mail to: user.email, subject: "Welcome to Scriblix"
+    mail to: user.email, subject: "Welcome"
   end
 end

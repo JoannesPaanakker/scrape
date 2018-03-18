@@ -62,16 +62,6 @@ ActiveRecord::Schema.define(version: 20180315144014) do
     t.index ["user_id"], name: "index_properties_on_user_id"
   end
 
-  create_table "transactions", force: :cascade do |t|
-    t.bigint "user_id"
-    t.bigint "portal_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "price_cents", default: 0, null: false
-    t.index ["portal_id"], name: "index_transactions_on_portal_id"
-    t.index ["user_id"], name: "index_transactions_on_user_id"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -91,7 +81,6 @@ ActiveRecord::Schema.define(version: 20180315144014) do
     t.string "comp_url"
     t.string "phone_number"
     t.string "address"
-    t.string "user"
     t.bigint "package_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["package_id"], name: "index_users_on_package_id"
@@ -100,7 +89,5 @@ ActiveRecord::Schema.define(version: 20180315144014) do
 
   add_foreign_key "properties", "portals"
   add_foreign_key "properties", "users"
-  add_foreign_key "transactions", "portals"
-  add_foreign_key "transactions", "users"
   add_foreign_key "users", "packages"
 end
