@@ -1,1 +1,3 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+App built as backend for www.scriblix.com.
+Scraping functionality to get information from existing real estate agents website and transfer data to real estate portals.
+
